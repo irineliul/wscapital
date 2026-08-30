@@ -80,7 +80,7 @@ export function CommissionChecker() {
   )
 
   return (
-    <section id="comisioane" className="bg-background py-16 lg:py-24">
+    <section id="comisioane" className="hero-striations bg-background py-16 lg:py-24">
       <div className="mx-auto max-w-6xl px-4">
         <div className="max-w-3xl">
           <p className="text-xs font-semibold tracking-widest text-accent-foreground/70 uppercase">
