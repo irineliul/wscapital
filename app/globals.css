@@ -161,5 +161,23 @@
   }
   body {
     @apply bg-background text-foreground;
+    background-image:
+      repeating-radial-gradient(
+        ellipse at 18% 12%,
+        transparent 0,
+        transparent 22px,
+        oklch(0.42 0.09 152 / 0.16) 23px,
+        transparent 25px,
+        transparent 48px
+      ),
+      repeating-radial-gradient(
+        ellipse at 82% 78%,
+        transparent 0,
+        transparent 34px,
+        oklch(0.48 0.1 152 / 0.12) 35px,
+        transparent 37px,
+        transparent 72px
+      );
+    background-attachment: fixed;
   }
 }
