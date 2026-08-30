@@ -123,7 +123,7 @@ export function RegisterForm() {
   const tier = tiers[country.tier]
 
   return (
-    <section id="inregistrare" className="bg-primary py-16 text-primary-foreground lg:py-24">
+    <section id="inregistrare" className="hero-striations bg-primary py-16 text-primary-foreground lg:py-24">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 lg:grid-cols-2 lg:items-start">
         <div>
           <p className="text-xs font-semibold tracking-widest text-accent uppercase">
