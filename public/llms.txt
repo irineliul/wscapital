@@ -1,0 +1,27 @@
+# WS Capital — wscapital.app
+
+WS Capital offers a professional Martingale forex trading strategy with 1:500 leverage through BlackBull Markets brokerage.
+
+## Affiliate Program
+- Free registration as affiliate partner
+- Commission: $250–$500 per activated investor depending on country
+- Sub-affiliate: 10% extra commission from your team
+- Real-time dashboard with clicks, registrations and deposits
+
+## Trading Strategy
+- 4-level Martingale with deposit divided by 15 risk units
+- Levels use 1-2-4-8 units, R:R 1:2, Stop Loss and Take Profit on each level
+- Free Pine Script Supertrend robot included via email
+- TradingView Pro activated after deposit validation
+- Copy Trading access included
+
+## What investors receive
+- 1:500 leverage brokerage account
+- Free Pine Script trading robot (email attachment)
+- TradingView PRO activation
+- Copy Trading access + video tutorial
+- Affiliate and sub-affiliate dashboard link
+
+## Registration
+- Website: https://wscapital.app
+- Free affiliate registration: https://wscapital.app/#inregistrare
