@@ -60,7 +60,7 @@ export function Hero() {
   const content = t[lang]
 
   return (
-    <section className="relative overflow-hidden bg-primary text-primary-foreground">
+    <section className="hero-striations relative overflow-hidden bg-primary text-primary-foreground">
       <div className="mx-auto grid max-w-6xl gap-12 px-4 py-16 lg:grid-cols-2 lg:items-center lg:py-24">
         <div>
           <p className="inline-flex items-center gap-2 rounded-full border border-accent/40 bg-accent/10 px-3 py-1 text-xs font-medium tracking-wide text-accent uppercase">

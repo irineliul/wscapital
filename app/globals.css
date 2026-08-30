@@ -180,4 +180,26 @@
       );
     background-attachment: fixed;
   }
+
+  .hero-striations {
+    isolation: isolate;
+    background-image:
+      repeating-radial-gradient(
+        ellipse at 12% 18%,
+        transparent 0,
+        transparent 26px,
+        oklch(0.42 0.09 152 / 0.2) 27px,
+        transparent 29px,
+        transparent 56px
+      ),
+      repeating-radial-gradient(
+        ellipse at 88% 82%,
+        transparent 0,
+        transparent 38px,
+        oklch(0.48 0.1 152 / 0.16) 39px,
+        transparent 41px,
+        transparent 82px
+      );
+    background-attachment: fixed;
+  }
 }
