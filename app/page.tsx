@@ -7,6 +7,7 @@ import { AffiliateProgram } from '@/components/affiliate-program'
 import { CommissionChecker } from '@/components/commission-checker'
 import { PromotionMethods } from '@/components/promotion-methods'
 import { RegisterForm } from '@/components/register-form'
+import { Faq } from '@/components/faq'
 import { SiteFooter } from '@/components/site-footer'
 import { SiteTranslation } from '@/components/site-translation'
 
@@ -25,6 +26,7 @@ export default function Page() {
         <PromotionMethods />
         <RegisterForm />
       </main>
+      <Faq />
       <SiteFooter />
     </>
   )
