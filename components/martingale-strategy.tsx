@@ -95,7 +95,7 @@ export function MartingaleStrategy() {
     () => buildMartingaleLevels(deposit || 0, stopLossPips || 1),
     [deposit, stopLossPips],
   )
-  const unit = (deposit || 0) / RISK_UNITS
+  const unit = Math.max(10, (deposit || 0) / RISK_UNITS)
 
   return (
     <section id="strategie" className="bg-background py-16 lg:py-24">

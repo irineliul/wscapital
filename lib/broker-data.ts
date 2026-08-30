@@ -179,7 +179,7 @@ export function buildMartingaleLevels(
   deposit: number,
   stopLossPips = 20,
 ): MartingaleLevel[] {
-  const unit = deposit / RISK_UNITS
+  const unit = Math.max(10, deposit / RISK_UNITS)
   let cumulativeRisk = 0
   let cumulativeMargin = 0
 
@@ -191,10 +191,11 @@ export function buildMartingaleLevels(
     const notional = lots * CONTRACT_SIZE
     // Valoarea per pip depinde direct de volumul de loturi.
     const pipValue = lots * PIP_VALUE_PER_LOT
-    // Profitul și pierderea rezultă din mișcarea în pips × valoarea per pip.
+    // Strategia definește riscul ca unitatea alocată nivelului: N1 = $10,
+    // iar Take Profit este fix 2R: N1 = $20. Pips rămân afișați ca parametru de execuție.
     const takeProfitPips = stopLossPips * 2
-    const risk = pipValue * stopLossPips
-    const takeProfit = pipValue * takeProfitPips
+    const risk = unit * multiplier
+    const takeProfit = risk * 2
     cumulativeRisk += risk
     cumulativeMargin += margin
 
