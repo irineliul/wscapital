@@ -142,14 +142,14 @@ export const MIN_LOT = 0.01
 /**
  * Paritatea de loturi în funcție de leverage.
  * Marja = (loturi × 100.000) / leverage.
- * La 1:500 => marja pentru 0,01 lot = 1.000 / 500 = $2.
- * Deci: $2 marjă => 0,01 lot, iar $10 marjă => 0,05 lot.
+ * Pentru strategia WS Capital, $10 marjă pornește de la 0,10 lot.
+ * Deci volumul este 0,01 lot pentru fiecare $1 de marjă.
  */
-export const MARGIN_PER_MIN_LOT = (CONTRACT_SIZE * MIN_LOT) / LEVERAGE // = $2 la 1:500
+export const MARGIN_PER_MIN_LOT = 1 // $1 marjă pentru 0,01 lot în strategia WS Capital
 
-/** Câte loturi se deschid pentru o anumită marjă (capital), în funcție de leverage. */
+/** Câte loturi se deschid pentru o anumită marjă: $10 => 0,10 lot. */
 export function lotsForMargin(margin: number): number {
-  return (margin * LEVERAGE) / CONTRACT_SIZE
+  return (margin / MARGIN_PER_MIN_LOT) * MIN_LOT
 }
 
 /**
@@ -187,8 +187,8 @@ export function buildMartingaleLevels(
     // Capitalul alocat nivelului este folosit drept marjă și se dublează pe fiecare nivel.
     const margin = unit * multiplier
     // Leverage-ul determină expunerea și volumul de loturi deschis.
-    const notional = margin * LEVERAGE
-    const lots = notional / CONTRACT_SIZE
+    const lots = lotsForMargin(margin)
+    const notional = lots * CONTRACT_SIZE
     // Valoarea per pip depinde direct de volumul de loturi.
     const pipValue = lots * PIP_VALUE_PER_LOT
     // Profitul și pierderea rezultă din mișcarea în pips × valoarea per pip.
