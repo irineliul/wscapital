@@ -7,26 +7,23 @@ const _manrope = Manrope({ subsets: ['latin'] })
 const _jetbrainsMono = JetBrains_Mono({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'WS Capital — Wolf Snake Capital | Professional Trading',
-  description:
-    'Oferim strategia Mrtingal pe 4 niveluri cu depozit împărțit la 15 in Brokeraj cu leverage 1:500, TradingView Pro gratuit, robot creat de AI in Pine Script pentru semnale, Copy trade și comisioane de afiliere de $250–$500 per investitor activat.',
-  generator: 'v0.app',
-  icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
+  title: "WS Capital — Martingale Forex Strategy + $250–$500 Affiliate Program",
+  description: "Turn $150 into $153,600 in 10 weeks with the 4-level Martingale strategy. Free affiliate registration: earn $250–$500 per activated investor. Free Pine Script robot + TradingView Pro included.",
+  keywords: "martingale forex strategy, forex affiliate program, $500 commission per investor, leverage 1:500, copy trading, TradingView Pro free, pine script robot, blackbull affiliate, supertrend signals",
+  openGraph: {
+    title: "WS Capital — Martingale Strategy + Affiliate $250–$500",
+    description: "Free affiliate registration. Earn $250–$500 per investor. 4-level Martingale with 1:500 leverage. Free Pine Script trading robot.",
+    url: "https://wscapital.app",
+    siteName: "WS Capital",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "WS Capital — Earn $250–$500 per Forex Investor",
+    description: "Free affiliate program + Martingale trading strategy + Pine Script robot.",
+  },
+  alternates: {
+    canonical: "https://wscapital.app",
   },
 }
 
