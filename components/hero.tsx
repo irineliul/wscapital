@@ -22,6 +22,7 @@ const t = {
     ],
     stats: [
       { k: '15', v: 'Units' },
+      { k: 'Free', v: 'Affiliate' },
       { k: '$250–$500', v: 'Affiliate Commission' },     
     ],
     imgAlt: 'Trading terminal with candlestick chart and order panel showing Stop Loss and Take Profit',
@@ -41,6 +42,7 @@ const t = {
     ],
     stats: [
       { k: '15', v: 'Unități' },
+      { k: 'Gratuit', v: 'Afiliere' },
       { k: '$250–$500', v: 'Comision afiliat' },  
     ],
     imgAlt: 'Terminal de tranzacționare cu grafic candlestick și panou de ordine cu Stop Loss și Take Profit',
