@@ -61,7 +61,7 @@
   --secondary: oklch(0.9 0.035 145);
   --secondary-foreground: oklch(0.25 0.045 154);
   --muted: oklch(0.92 0.012 92);
-  --muted-foreground: oklch(0.43 0.025 255);
+  --muted-foreground: oklch(0.43 0.025 154);
   --accent: oklch(0.66 0.095 151);
   --accent-foreground: oklch(0.18 0.028 158);
   --destructive: oklch(0.52 0.18 28);
@@ -99,7 +99,7 @@
   --muted: oklch(0.27 0.04 154);
   --muted-foreground: oklch(0.76 0.018 108);
   --accent: oklch(0.57 0.11 156);
-  --accent-foreground: oklch(0.14 0.025 255);
+  --accent-foreground: oklch(0.14 0.025 154);
   --destructive: oklch(0.704 0.191 22.216);
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);
@@ -111,7 +111,7 @@
   --chart-5: oklch(0.269 0 0);
   --sidebar: oklch(0.205 0 0);
   --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary: oklch(0.56 0.09 154);
   --sidebar-primary-foreground: oklch(0.985 0 0);
   --sidebar-accent: oklch(0.269 0 0);
   --sidebar-accent-foreground: oklch(0.985 0 0);
@@ -147,7 +147,7 @@
     --chart-5: oklch(0.269 0 0);
     --sidebar: oklch(0.205 0 0);
     --sidebar-foreground: oklch(0.985 0 0);
-    --sidebar-primary: oklch(0.488 0.243 264.376);
+    --sidebar-primary: oklch(0.56 0.09 154);
     --sidebar-primary-foreground: oklch(0.985 0 0);
     --sidebar-accent: oklch(0.269 0 0);
     --sidebar-accent-foreground: oklch(0.985 0 0);
@@ -183,8 +183,9 @@
   }
 
   h1, h2, h3 {
-    @apply font-serif;
-    letter-spacing: -0.02em;
+    @apply font-serif font-semibold;
+    letter-spacing: -0.015em;
+    line-height: 1.12;
   }
 
   .hero-striations {
@@ -192,7 +193,7 @@
     background-image:
       repeating-radial-gradient(ellipse at 12% 18%, transparent 0, transparent 26px, oklch(0.3 0.07 154 / 0.12) 27px, transparent 29px, transparent 56px),
       repeating-radial-gradient(ellipse at 88% 82%, transparent 0, transparent 38px, oklch(0.97 0.02 108 / 0.18) 39px, transparent 41px, transparent 82px),
-      repeating-linear-gradient(112deg, transparent 0, transparent 5px, oklch(0.25 0.05 154 / 0.055) 6px, transparent 7px);
+      repeating-linear-gradient(112deg, transparent 0, transparent 5px, oklch(0.2 0.04 154 / 0.07) 6px, transparent 7px);
     background-attachment: fixed;
   }
 }
