@@ -171,7 +171,7 @@ export function CommissionChecker() {
               <div className="rounded-xl border border-primary-foreground/20 bg-primary-foreground/10 p-4">
                 <p className="text-xs text-primary-foreground/80">{content.subComm}</p>
                 <p className="mt-1 font-mono text-3xl font-bold text-primary-foreground">
-                  {usd(tier.commission / 10)}
+                  {usd(tier.subCommission)}
                 </p>
                 <p className="mt-1 text-xs text-primary-foreground/75">
                   {content.perSub}
