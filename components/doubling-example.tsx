@@ -9,7 +9,7 @@ const usd = (n: number) =>
 const t = {
   en: {
     badge: 'Calculation Example',
-    titlePrefix: 'Illustrative 10-week capital growth: from $150 to ',
+    titlePrefix: 'Illustrative 10-Week Capital Growth Projection: from $150 to ',
     titleSuffix: ' in 10 weeks',
     descPrefix: 'The goal is simple and repeatable: ',
     descTarget: '+100% per week',
