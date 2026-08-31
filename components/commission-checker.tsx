@@ -86,7 +86,7 @@ export function CommissionChecker() {
           <p className="text-xs font-semibold tracking-widest text-accent-foreground/70 uppercase">
             {content.badge}
           </p>
-          <h2 className="mt-3 text-3xl font-semibold tracking-tight text-balance sm:text-4xl">
+          <h2 className="mt-3 font-serif text-3xl font-semibold tracking-tight text-balance sm:text-4xl">
             {content.title}
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
