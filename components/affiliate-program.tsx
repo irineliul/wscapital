@@ -10,13 +10,13 @@ const usd = (n: number) =>
 const t = {
   en: {
     badge: 'Partnership Program',
-    title: 'Affiliate and sub-affiliate: $250–$500 per active investor',
+    title: 'Affiliate and sub-affiliate: Up to $500 per active investor',
     desc: 'Two-tier structure, paid after verification of deposit and trading turnover. Commission depends on the country tier.',
     steps: [
       {
         icon: UserPlus,
         title: '1. Direct Affiliate',
-        text: 'You get your own unique tracking link. Earn between $250 and $500 for every investor activated with deposit and trading turnover.',
+        text: 'You get your own unique tracking link. Earn up to $500 for every investor activated with deposit and trading turnover.',
       },
       {
         icon: Network,
@@ -48,13 +48,13 @@ const t = {
   },
   ro: {
     badge: 'Program de parteneriat',
-    title: 'Afiliere și sub-afiliere: $250–$500 per investitor activat',
+    title: 'Afiliere și sub-afiliere: până la $500 per investitor activat',
     desc: 'Structură pe două niveluri, cu plată după validarea depozitului și a rulajului de tranzacționare. Comisionul depinde de țară.',
     steps: [
       {
         icon: UserPlus,
         title: '1. Afiliere directă',
-        text: 'Primești link-ul propriu de tracking. Pentru fiecare investitor activat cu depozit și rulaj de tranzacționare încasezi între $250 și $500, în funcție de țară.',
+        text: 'Primești link-ul propriu de tracking. Pentru fiecare investitor activat cu depozit și rulaj de tranzacționare încasezi până la $500, în funcție de țară.',
       },
       {
         icon: Network,
