@@ -77,7 +77,7 @@ const t = {
       {
         icon: Copy,
         title: 'Copy Trading în brokeraj',
-        text: 'Copiază automat tranzacțiile traderilor din platformă, voi alocați procentual și fixați limita de risc per nivel.',
+        text: 'Copiază automat tranzacțiile traderilor din platformă, aloci procentual și fixezi limita de risc pentru fiecare nivel.',
         tag: 'Automatizat',
       },
       {

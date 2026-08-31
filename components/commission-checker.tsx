@@ -13,7 +13,7 @@ const t = {
   en: {
     badge: 'Countries',
     title: 'Check commissions by country',
-    desc: 'Commission ranges between $250 and $500 per active investor, depending on country tier. Investors are considered active after deposit and minimum trading volume.',
+    desc: 'Earn up to $500 per active investor, depending on country tier. Investors are considered active after deposit and minimum trading volume.',
     selectCountry: 'Select Country',
     directLabel: 'Direct active investors / month',
     subLabel: 'Sub-affiliate investors / month',
@@ -33,7 +33,7 @@ const t = {
   ro: {
     badge: 'Țări',
     title: 'Verifică comisioanele pe țări',
-    desc: 'Comisionul este între $250 și $500 per investitor activat, în funcție de țară. Investitorul este considerat activat după depozit și după atingerea rulajului minim de tranzacționare.',
+    desc: 'Comisionul este de până la $500 per investitor activat, în funcție de țară. Investitorul este considerat activat după depozit și după atingerea rulajului minim de tranzacționare.',
     selectCountry: 'Selectează țara',
     directLabel: 'Investitori direcți activați / lună',
     subLabel: 'Investitori din sub-afiliere / lună',
