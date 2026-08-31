@@ -9,7 +9,7 @@ const usd = (n: number) =>
 const t = {
   en: {
     badge: 'Calculation Example',
-    titlePrefix: 'Investors double their capital 10 times in a row — from $150 to ',
+    titlePrefix: 'Illustrative 10-week capital growth: from $150 to ',
     titleSuffix: ' in 10 weeks',
     descPrefix: 'The goal is simple and repeatable: ',
     descTarget: '+100% per week',
@@ -34,7 +34,7 @@ const t = {
   },
   ro: {
     badge: 'Exemplu de calcul',
-    titlePrefix: 'Investitorii dublează suma de 10 ori la rând: de la $150 la ',
+    titlePrefix: 'Exemplu ilustrativ de creștere a capitalului în 10 săptămâni: de la $150 la ',
     titleSuffix: ' în 10 săptămâni',
     descPrefix: 'Obiectivul este simplu și repetabil: ',
     descTarget: '+100% pe săptămână',
