@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { buttonVariants } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 import { BadgeCheck, Bot, Copy, LineChart } from 'lucide-react'
@@ -49,7 +49,6 @@ const t = {
 
 export function Hero() {
   const [lang, setLang] = useState<'en' | 'ro'>('en')
-  const videoRef = useRef<HTMLVideoElement>(null)
 
   useEffect(() => {
     const saved = window.localStorage.getItem('site-language')
@@ -57,21 +56,6 @@ export function Hero() {
     if (saved === 'ro') {
       setLang('ro')
     }
-
-    // Pornește video-ul automat după 5 secunde
-    const timer = window.setTimeout(() => {
-      const video = videoRef.current
-
-      if (video) {
-        video.muted = true
-
-        video.play().catch((error) => {
-          console.log('Video autoplay was blocked:', error)
-        })
-      }
-    }, 5000)
-
-    return () => window.clearTimeout(timer)
   }, [])
 
   const content = t[lang]
@@ -138,24 +122,20 @@ export function Hero() {
         {/* RIGHT SIDE - VIDEO */}
         <div className="relative">
           <div className="overflow-hidden rounded-2xl border border-primary-foreground/15 bg-primary-foreground/5 shadow-2xl">
-
             <video
-              ref={videoRef}
               className="block h-auto w-full"
+              controls
               muted
               playsInline
-              controls
-              preload="auto"
+              preload="metadata"
               poster="/images/trading-terminal.png"
             >
               <source
                 src="/videos/wscapital.mp4"
                 type="video/mp4"
               />
-
               Your browser does not support the video tag.
             </video>
-
           </div>
 
           {/* STATS */}
