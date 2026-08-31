@@ -66,7 +66,7 @@ export function Hero() {
           <p className="inline-flex items-center gap-2 rounded-full border border-accent/40 bg-accent/10 px-3 py-1 text-xs font-medium tracking-wide text-accent uppercase">
             {content.badge}
           </p>
-          <h1 className="mt-6 text-4xl leading-tight font-semibold tracking-tight text-balance sm:text-3xl lg:text-4xl">
+          <h1 className="mt-6 font-serif text-4xl leading-tight font-semibold tracking-tight text-balance sm:text-3xl lg:text-4xl">
             {content.title} <span className="text-accent">{content.highlight}</span>
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-primary-foreground/80">

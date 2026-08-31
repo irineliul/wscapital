@@ -129,7 +129,7 @@ export function RegisterForm() {
           <p className="text-xs font-semibold tracking-widest text-accent uppercase">
             {content.badge}
           </p>
-          <h2 className="mt-3 text-3xl font-semibold tracking-tight text-balance sm:text-4xl">
+          <h2 className="mt-3 font-serif text-3xl font-semibold tracking-tight text-balance sm:text-4xl">
             {content.title}
           </h2>
 

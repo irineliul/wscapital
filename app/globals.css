@@ -86,14 +86,14 @@
 
 .dark {
   color-scheme: dark;
-  --background: oklch(0.16 0.025 255);
-  --foreground: oklch(0.94 0.012 92);
-  --card: oklch(0.21 0.03 255);
-  --card-foreground: oklch(0.94 0.012 92);
-  --popover: oklch(0.21 0.03 255);
-  --popover-foreground: oklch(0.94 0.012 92);
-  --primary: oklch(0.27 0.05 255);
-  --primary-foreground: oklch(0.96 0.012 92);
+  --background: oklch(0.19 0.025 154);
+  --foreground: oklch(0.95 0.014 108);
+  --card: oklch(0.24 0.035 154);
+  --card-foreground: oklch(0.95 0.014 108);
+  --popover: oklch(0.24 0.035 154);
+  --popover-foreground: oklch(0.95 0.014 108);
+  --primary: oklch(0.56 0.09 154);
+  --primary-foreground: oklch(0.98 0.014 108);
   --secondary: oklch(0.29 0.035 255);
   --secondary-foreground: oklch(0.94 0.012 92);
   --muted: oklch(0.25 0.028 255);
