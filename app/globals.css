@@ -50,10 +50,10 @@
 
 :root {
   color-scheme: light;
-  --background: oklch(0.96 0.012 92);
-  --foreground: oklch(0.18 0.025 255);
-  --card: oklch(0.985 0.006 92);
-  --card-foreground: oklch(0.18 0.025 255);
+  --background: oklch(0.975 0.018 112);
+  --foreground: oklch(0.2 0.028 158);
+  --card: oklch(0.992 0.012 112);
+  --card-foreground: oklch(0.2 0.028 158);
   --popover: oklch(0.985 0.006 92);
   --popover-foreground: oklch(0.18 0.025 255);
   --primary: oklch(0.23 0.045 255);
@@ -62,12 +62,12 @@
   --secondary-foreground: oklch(0.23 0.045 255);
   --muted: oklch(0.92 0.012 92);
   --muted-foreground: oklch(0.43 0.025 255);
-  --accent: oklch(0.48 0.105 156);
-  --accent-foreground: oklch(0.98 0.01 92);
+  --accent: oklch(0.66 0.095 151);
+  --accent-foreground: oklch(0.18 0.028 158);
   --destructive: oklch(0.52 0.18 28);
-  --border: oklch(0.78 0.018 92);
-  --input: oklch(0.78 0.018 92);
-  --ring: oklch(0.48 0.105 156);
+  --border: oklch(0.84 0.025 112);
+  --input: oklch(0.84 0.025 112);
+  --ring: oklch(0.66 0.095 151);
   --chart-1: oklch(0.29 0.058 157);
   --chart-2: oklch(0.45 0.09 155);
   --chart-3: oklch(0.6 0.13 153);
@@ -167,7 +167,7 @@
         ellipse at 18% 12%,
         transparent 0,
         transparent 22px,
-        oklch(0.42 0.09 152 / 0.16) 23px,
+        oklch(0.58 0.09 151 / 0.13) 23px,
         transparent 25px,
         transparent 48px
       ),
@@ -175,7 +175,7 @@
         ellipse at 82% 78%,
         transparent 0,
         transparent 34px,
-        oklch(0.48 0.1 152 / 0.12) 35px,
+        oklch(0.66 0.095 151 / 0.1) 35px,
         transparent 37px,
         transparent 72px
       );
