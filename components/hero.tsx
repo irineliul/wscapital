@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { buttonVariants } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 import { BadgeCheck, Bot, Copy, LineChart } from 'lucide-react'
@@ -49,7 +49,7 @@ const t = {
 
 export function Hero() {
   const [lang, setLang] = useState<'en' | 'ro'>('en')
-  const [videoStarted, setVideoStarted] = useState(false)
+  const videoRef = useRef<HTMLVideoElement>(null)
 
   useEffect(() => {
     const saved = window.localStorage.getItem('site-language')
@@ -58,9 +58,16 @@ export function Hero() {
       setLang('ro')
     }
 
-    // Pornește video-ul după 5 secunde
     const timer = window.setTimeout(() => {
-      setVideoStarted(true)
+      const video = videoRef.current
+
+      if (video) {
+        video.muted = true
+
+        video.play().catch((error) => {
+          console.log('Autoplay blocked by browser:', error)
+        })
+      }
     }, 5000)
 
     return () => window.clearTimeout(timer)
