@@ -27,7 +27,7 @@ export function SiteFooter() {
                 alt="WS Capital — Wolf Snake Capital"
                 width={44}
                 height={44}
-                className="size-11 shrink-0 object-contain"
+                className="size-16 shrink-0 object-contain"
               />
               <span className="text-foreground">WS</span> <span className="text-accent">Capital</span>
             </div>
