@@ -17,12 +17,12 @@ const t = {
         a: 'Yes, registration as an affiliate partner is completely free. You register once and receive two links by email — one to open your investor account with 1:500 leverage and one to register as an affiliate partner.',
       },
       {
-        q: 'How much can I earn as an affiliate partner?',
-        a: 'You earn $250–$500 per activated investor, depending on your country. You also earn 10% extra commission for every investor activated by affiliates you recruit — unlimited. Build your own team in your country and scale your earnings.',
+      q: 'How much can I earn as an affiliate partner?',
+      a: 'You can earn up to $500 per activated investor, depending on the country tier. You also earn a 10% sub-affiliate commission for every investor activated by affiliates you recruit — with no limit. Build your own team and scale your earnings.',
       },
       {
         q: 'What do I receive as an investor?',
-        a: 'After deposit validation you receive: 1:500 leverage trading account, TradingView PRO activation, free Pine Script trading robot (Supertrend signals), Copy Trading access and video tutorial, and your affiliate and sub-affiliate dashboard link.',
+        a: 'After deposit validation you receive: 1:500 leverage trading account, TradingView PRO activation, free Pine Script trading robot (1 min Adaptive signals), Copy Trading access and video tutorial',
       },
       {
         q: 'Can I turn $150 into $153,600 in 10 weeks?',
@@ -34,7 +34,7 @@ const t = {
       },
       {
         q: 'What countries are eligible for the affiliate program?',
-        a: 'The program is available in most countries worldwide. Commissions range from $250 to $500 per activated investor depending on the country tier. Check the Commissions section on the site for your country.',
+        a: 'The program is available in most countries worldwide. You can earn up to $500 per activated investor depending on the country tier. Check the Commissions section on the site to see the applicable commission for your country.',
       },
       {
         q: 'How do I promote my affiliate link?',
@@ -55,12 +55,12 @@ const t = {
         a: 'Da, înregistrarea ca partener afiliat este complet gratuită. Te înregistrezi o singură dată și primești două linkuri pe email — unul pentru deschiderea contului de investitor cu leverage 1:500 și unul pentru înregistrarea ca partener afiliat.',
       },
       {
-        q: 'Cât pot câștiga ca partener afiliat?',
-        a: 'Câștigi $250–$500 per investitor activat, în funcție de țara ta. Câștigi și 10% comision suplimentar pentru fiecare investitor activat de afiliații pe care îi recrutezi — fără limită. Îți construiești propria echipă în țara ta și scalezi câștigurile.',
-      },
+      q: 'Cât pot câștiga ca partener afiliat?',
+      a: 'Poți câștiga până la $500 per investitor activat, în funcție de categoria țării. Primești și un comision de 10% din investitorii activați de afiliații pe care îi recrutezi — fără limită. Îți poți construi propria echipă și îți poți scala câștigurile.',
+},
       {
         q: 'Ce primesc ca investitor?',
-        a: 'După validarea depozitului primești: cont de tranzacționare cu leverage 1:500, TradingView PRO activat, robot de tranzacționare gratuit Pine Script (semnale Supertrend), acces la Copy Trading și tutorial video, și linkul de afiliere și sub-afiliere cu dashboard.',
+        a: 'După validarea depozitului primești: cont de tranzacționare cu leverage 1:500, TradingView PRO activat, robot de tranzacționare gratuit Pine Script (1 minut Adaptive semnale), acces la Copy Trading și tutorial video.',
       },
       {
         q: 'Pot transforma $150 în $153.600 în 10 săptămâni?',
@@ -71,9 +71,9 @@ const t = {
         a: 'Depozitul minim depinde de grupul de țări, începând de la $150. După validarea depozitului și a rulajului minim de tranzacționare, statutul de investitor e confirmat și toate instrumentele sunt activate.',
       },
       {
-        q: 'Ce țări sunt eligibile pentru programul de afiliere?',
-        a: 'Programul este disponibil în majoritatea țărilor din lume. Comisioanele variază între $250 și $500 per investitor activat, în funcție de grupul de țări. Verifică secțiunea Comisioane de pe site pentru țara ta.',
-      },
+      q: 'Ce țări sunt eligibile pentru programul de afiliere?',
+      a: 'Programul este disponibil în majoritatea țărilor din lume. Poți câștiga până la $500 per investitor activat, în funcție de categoria țării. Verifică secțiunea Comisioane pentru a vedea comisionul aplicabil țării tale.',
+},
       {
         q: 'Cum îmi promovez linkul de afiliat?',
         a: 'Poți promova gratuit prin grupuri Facebook, story-uri Instagram, WhatsApp, Telegram și comunități online. Promovarea plătită este permisă pe Facebook Ads, Instagram Business, YouTube, TikTok Business și X. Formatul linkului tău personalizat este: wscapital.app/?affiliate=ID_TĂU',
