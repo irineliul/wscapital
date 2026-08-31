@@ -54,12 +54,12 @@
   --foreground: oklch(0.2 0.028 158);
   --card: oklch(0.992 0.012 112);
   --card-foreground: oklch(0.2 0.028 158);
-  --popover: oklch(0.985 0.006 92);
-  --popover-foreground: oklch(0.18 0.025 255);
-  --primary: oklch(0.23 0.045 255);
-  --primary-foreground: oklch(0.97 0.012 92);
-  --secondary: oklch(0.9 0.018 92);
-  --secondary-foreground: oklch(0.23 0.045 255);
+  --popover: oklch(0.992 0.018 108);
+  --popover-foreground: oklch(0.2 0.028 154);
+  --primary: oklch(0.56 0.09 154);
+  --primary-foreground: oklch(0.98 0.014 108);
+  --secondary: oklch(0.9 0.035 145);
+  --secondary-foreground: oklch(0.25 0.045 154);
   --muted: oklch(0.92 0.012 92);
   --muted-foreground: oklch(0.43 0.025 255);
   --accent: oklch(0.66 0.095 151);
@@ -190,22 +190,9 @@
   .hero-striations {
     isolation: isolate;
     background-image:
-      repeating-radial-gradient(
-        ellipse at 12% 18%,
-        transparent 0,
-        transparent 26px,
-        oklch(0.42 0.09 152 / 0.2) 27px,
-        transparent 29px,
-        transparent 56px
-      ),
-      repeating-radial-gradient(
-        ellipse at 88% 82%,
-        transparent 0,
-        transparent 38px,
-        oklch(0.48 0.1 152 / 0.16) 39px,
-        transparent 41px,
-        transparent 82px
-      );
+      repeating-radial-gradient(ellipse at 12% 18%, transparent 0, transparent 26px, oklch(0.3 0.07 154 / 0.12) 27px, transparent 29px, transparent 56px),
+      repeating-radial-gradient(ellipse at 88% 82%, transparent 0, transparent 38px, oklch(0.97 0.02 108 / 0.18) 39px, transparent 41px, transparent 82px),
+      repeating-linear-gradient(112deg, transparent 0, transparent 5px, oklch(0.25 0.05 154 / 0.055) 6px, transparent 7px);
     background-attachment: fixed;
   }
 }
