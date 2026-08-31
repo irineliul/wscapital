@@ -8,10 +8,10 @@ import { BadgeCheck, Bot, Copy, LineChart } from 'lucide-react'
 
 const t = {
   en: {
-    badge: 'AFILIATE $250–$500 / INVESTOR + LEVERAGE 1:500 BROKERAGE',
+    badge: 'AFFILIATE PROGRAM + LEVERAGE 1:500 BROKERAGE',
     title: 'Professional Investment Management with Martingale Strategy &',
-    highlight: '$250–$500 Earnings per Investor',
-    desc: 'As an affiliate partner, you earn commissions of $250–$500 per activated investor. Investors receive free TradingView Pro, a free Pine Editor bot created by AI, and access to Copy trading. Deposit split into 15 units for 4 Martingale levels.',
+    highlight: 'Up to $500 Earnings per Investor',
+    desc: 'As an affiliate partner, you earn up to $500 per activated investor, depending on the country tier. Investors receive free TradingView Pro, a free Pine Script robot created with AI, and access to Copy Trading. Deposit split into 15 units for 4 Martingale levels.',
     ctaRegister: 'Register now',
     ctaCommission: 'Check commissions by country',
     highlights: [
@@ -23,17 +23,18 @@ const t = {
     stats: [
       { k: '15', v: 'Units' },
       { k: 'Free', v: 'Affiliate' },
-      { k: '$250–$500', v: 'Affiliate Commission' },     
+      { k: 'Up to $500', v: 'Affiliate Commission' },
     ],
     imgAlt: 'Trading terminal with candlestick chart and order panel showing Stop Loss and Take Profit',
   },
+
   ro: {
-    badge: 'AFILIERE $250–$500 / INVESTITOR + BROKERAJ LEVERAGE 1:500',
+    badge: 'PROGRAM DE AFILIERE + BROKERAJ CU LEVERAGE 1:500',
     title: 'Administrare Profesională a Investiției cu Strategia Martingale &',
-    highlight: 'Câștiguri de $250–$500 per Investitor',
-    desc: 'Ca partener afiliat beneficiezi de comisioane de $250–$500 per investitor activat. Investitorii primesc TradingView Pro gratuit, robot gratuit pentru Pine Editor creat de AI și acces la Copy trading. Depozit divizat în 15 unități pentru 4 niveluri Martingale.',
+    highlight: 'Până la $500 câștig per Investitor',
+    desc: 'Ca partener afiliat, beneficiezi de până la $500 pentru fiecare investitor activat, în funcție de grupa țării. Investitorii primesc TradingView Pro gratuit, un robot Pine Script creat cu AI și acces la Copy Trading. Depozitul este împărțit în 15 unități pentru 4 niveluri Martingale.',
     ctaRegister: 'Înregistrează-te acum',
-    ctaCommission: 'Verifică comisioanele pe țari',
+    ctaCommission: 'Verifică comisioanele pe țară',
     highlights: [
       { icon: LineChart, label: 'Leverage 1:500' },
       { icon: BadgeCheck, label: 'TradingView Pro gratuit' },
@@ -42,8 +43,8 @@ const t = {
     ],
     stats: [
       { k: '15', v: 'Unități' },
-      { k: 'Free', v: 'Afiliere' },
-      { k: '$250–$500', v: 'Comision afiliat' },  
+      { k: 'Gratuit', v: 'Afiliere' },
+      { k: 'Până la $500', v: 'Comision afiliat' },
     ],
     imgAlt: 'Terminal de tranzacționare cu grafic candlestick și panou de ordine cu Stop Loss și Take Profit',
   },
