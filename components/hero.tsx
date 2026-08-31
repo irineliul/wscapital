@@ -49,10 +49,21 @@ const t = {
 
 export function Hero() {
   const [lang, setLang] = useState<'en' | 'ro'>('en')
+  const [videoStarted, setVideoStarted] = useState(false)
 
   useEffect(() => {
     const saved = window.localStorage.getItem('site-language')
-    if (saved === 'ro') setLang('ro')
+
+    if (saved === 'ro') {
+      setLang('ro')
+    }
+
+    // Pornește video-ul după 5 secunde
+    const timer = window.setTimeout(() => {
+      setVideoStarted(true)
+    }, 5000)
+
+    return () => window.clearTimeout(timer)
   }, [])
 
   const content = t[lang]
@@ -61,7 +72,7 @@ export function Hero() {
     <section className="hero-striations relative overflow-hidden bg-primary text-primary-foreground">
       <div className="mx-auto grid max-w-6xl gap-12 px-4 py-16 lg:grid-cols-2 lg:items-center lg:py-24">
 
-        {/* LEFT — MAIN OFFER */}
+        {/* LEFT SIDE */}
         <div>
           <p className="inline-flex items-center gap-2 rounded-full border border-accent/40 bg-accent/10 px-3 py-1 text-xs font-medium tracking-wide text-accent uppercase">
             {content.badge}
@@ -69,7 +80,9 @@ export function Hero() {
 
           <h1 className="mt-6 font-serif text-4xl leading-tight font-semibold tracking-tight text-balance sm:text-3xl lg:text-4xl">
             {content.title}{' '}
-            <span className="text-accent">{content.highlight}</span>
+            <span className="text-accent">
+              {content.highlight}
+            </span>
           </h1>
 
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-primary-foreground/80">
@@ -114,14 +127,18 @@ export function Hero() {
           </ul>
         </div>
 
-        {/* RIGHT — VIDEO */}
+        {/* RIGHT SIDE - VIDEO */}
         <div className="relative">
           <div className="overflow-hidden rounded-2xl border border-primary-foreground/15 bg-primary-foreground/5 shadow-2xl">
+
             <video
-              className="h-auto w-full"
+              className="block h-auto w-full"
+              autoPlay={videoStarted}
+              muted
+              playsInline
               controls
               preload="metadata"
-              playsInline
+              poster="/images/trading-terminal.png"
             >
               <source
                 src="/videos/wscapital.mp4"
@@ -129,6 +146,7 @@ export function Hero() {
               />
               Your browser does not support the video tag.
             </video>
+
           </div>
 
           {/* STATS */}
