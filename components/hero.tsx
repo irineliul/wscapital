@@ -1,7 +1,6 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import Image from 'next/image'
 import { buttonVariants } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 import { BadgeCheck, Bot, Copy, LineChart } from 'lucide-react'
@@ -25,7 +24,6 @@ const t = {
       { k: 'Free', v: 'Affiliate' },
       { k: 'Up to $500', v: 'Affiliate Commission' },
     ],
-    imgAlt: 'Trading terminal with candlestick chart and order panel showing Stop Loss and Take Profit',
   },
 
   ro: {
@@ -46,7 +44,6 @@ const t = {
       { k: 'Gratuit', v: 'Afiliere' },
       { k: 'Până la $500', v: 'Comision afiliat' },
     ],
-    imgAlt: 'Terminal de tranzacționare cu grafic candlestick și panou de ordine cu Stop Loss și Take Profit',
   },
 }
 
@@ -63,13 +60,18 @@ export function Hero() {
   return (
     <section className="hero-striations relative overflow-hidden bg-primary text-primary-foreground">
       <div className="mx-auto grid max-w-6xl gap-12 px-4 py-16 lg:grid-cols-2 lg:items-center lg:py-24">
+
+        {/* LEFT — MAIN OFFER */}
         <div>
           <p className="inline-flex items-center gap-2 rounded-full border border-accent/40 bg-accent/10 px-3 py-1 text-xs font-medium tracking-wide text-accent uppercase">
             {content.badge}
           </p>
+
           <h1 className="mt-6 font-serif text-4xl leading-tight font-semibold tracking-tight text-balance sm:text-3xl lg:text-4xl">
-            {content.title} <span className="text-accent">{content.highlight}</span>
+            {content.title}{' '}
+            <span className="text-accent">{content.highlight}</span>
           </h1>
+
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-primary-foreground/80">
             {content.desc}
           </p>
@@ -84,6 +86,7 @@ export function Hero() {
             >
               {content.ctaRegister}
             </a>
+
             <a
               href="#comisioane"
               className={cn(
@@ -101,36 +104,52 @@ export function Hero() {
                 key={item.label}
                 className="flex items-center gap-2 rounded-lg border border-primary-foreground/15 bg-primary-foreground/5 px-3 py-2 text-sm"
               >
-                <item.icon className="size-4 text-accent" aria-hidden="true" />
+                <item.icon
+                  className="size-4 text-accent"
+                  aria-hidden="true"
+                />
                 {item.label}
               </li>
             ))}
           </ul>
         </div>
 
+        {/* RIGHT — VIDEO */}
         <div className="relative">
           <div className="overflow-hidden rounded-2xl border border-primary-foreground/15 bg-primary-foreground/5 shadow-2xl">
-            <Image
-              src="/images/trading-terminal.png"
-              alt={content.imgAlt}
-              width={1200}
-              height={900}
+            <video
               className="h-auto w-full"
-              priority
-            />
+              controls
+              preload="metadata"
+              playsInline
+            >
+              <source
+                src="/videos/wscapital.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
           </div>
+
+          {/* STATS */}
           <dl className="mt-4 grid grid-cols-3 gap-3 text-center">
             {content.stats.map((stat) => (
               <div
                 key={stat.k}
                 className="rounded-lg border border-primary-foreground/15 bg-primary-foreground/5 px-2 py-3"
               >
-                <dt className="font-mono text-lg font-semibold text-accent">{stat.k}</dt>
-                <dd className="mt-1 text-xs text-primary-foreground/70">{stat.v}</dd>
+                <dt className="font-mono text-lg font-semibold text-accent">
+                  {stat.k}
+                </dt>
+
+                <dd className="mt-1 text-xs text-primary-foreground/70">
+                  {stat.v}
+                </dd>
               </div>
             ))}
           </dl>
         </div>
+
       </div>
     </section>
   )
