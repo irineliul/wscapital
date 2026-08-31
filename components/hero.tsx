@@ -122,20 +122,24 @@ export function Hero() {
         {/* RIGHT SIDE - VIDEO */}
         <div className="relative">
           <div className="overflow-hidden rounded-2xl border border-primary-foreground/15 bg-primary-foreground/5 shadow-2xl">
+
             <video
               className="block h-auto w-full"
-              controls
+              autoPlay
               muted
               playsInline
-              preload="metadata"
+              controls
+              preload="auto"
               poster="/images/trading-terminal.png"
             >
               <source
                 src="/videos/wscapital.mp4"
                 type="video/mp4"
               />
+
               Your browser does not support the video tag.
             </video>
+
           </div>
 
           {/* STATS */}
