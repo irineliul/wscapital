@@ -47,53 +47,49 @@ export const tiers: Record<string, Tier> = {
   },
 }
 
-export type Country = {
-  name: string
-  code: string
-  tier: keyof typeof tiers
-}
+export type Country = { name: string; code: string; tier: keyof typeof tiers }
 
 export const countries: Country[] = [
   { name: 'United Kingdom', code: 'GB', tier: 'A' },
-  { name: 'Germany', code: 'DE', tier: 'A' },
+  { name: 'Germania', code: 'DE', tier: 'A' },
   { name: 'Switzerland', code: 'CH', tier: 'A' },
   { name: 'United Arab Emirates', code: 'AE', tier: 'C' },
   { name: 'Oman', code: 'OM', tier: 'C' },
   { name: 'Australia', code: 'AU', tier: 'A' },
   { name: 'Canada', code: 'CA', tier: 'D' },
   { name: 'Singapore', code: 'SG', tier: 'B' },
-  { name: 'Taiwan', code: 'TW', tier: 'B' },
+  { name: 'Taywan', code: 'TW', tier: 'B' },
   { name: 'Argentina', code: 'AR', tier: 'C' },
   { name: 'Belize', code: 'BZ', tier: 'C' },
-  { name: 'Brazil', code: 'BR', tier: 'C' },
+  { name: 'Brazilia', code: 'BR', tier: 'C' },
   { name: 'China', code: 'CN', tier: 'C' },
   { name: 'Colombia', code: 'CO', tier: 'C' },
   { name: 'Croatia', code: 'HR', tier: 'C' },
   { name: 'Ecuador', code: 'EC', tier: 'C' },
   { name: 'Cyprus', code: 'CY', tier: 'C' },
-  { name: 'Norway', code: 'NO', tier: 'A' },
-  { name: 'Denmark', code: 'DK', tier: 'A' },
-  { name: 'Ireland', code: 'IE', tier: 'A' },
+  { name: 'Norvegia', code: 'NO', tier: 'A' },
+  { name: 'Danemarca', code: 'DK', tier: 'A' },
+  { name: 'Irlanda', code: 'IE', tier: 'A' },
   { name: 'Austria', code: 'AT', tier: 'A' },
-  { name: 'Saudi Arabia', code: 'SA', tier: 'C' },
-  { name: 'Italy', code: 'IT', tier: 'C' },
+  { name: 'Arabia Saudită', code: 'SA', tier: 'C' },
+  { name: 'Italia', code: 'IT', tier: 'C' },
   { name: 'Jordan', code: 'JO', tier: 'C' },
-  { name: 'Spain', code: 'ES', tier: 'A' },
-  { name: 'France', code: 'FR', tier: 'A' },
+  { name: 'Spania', code: 'ES', tier: 'A' },
+  { name: 'Franța', code: 'FR', tier: 'A' },
   { name: 'Hong Kong', code: 'HK', tier: 'A' },
   { name: 'Seychelles', code: 'SC', tier: 'C' },
   { name: 'Hungary', code: 'HU', tier: 'A' },
-  { name: 'Netherlands', code: 'NL', tier: 'C' },
-  { name: 'Belgium', code: 'BE', tier: 'B' },
-  { name: 'Sweden', code: 'SE', tier: 'A' },
+  { name: 'Olanda', code: 'NL', tier: 'C' },
+  { name: 'Belgia', code: 'BE', tier: 'B' },
+  { name: 'Suedia', code: 'SE', tier: 'A' },
   { name: 'New Zealand', code: 'NZ', tier: 'A' },
-  { name: 'Finland', code: 'FI', tier: 'C' },
-  { name: 'Japan', code: 'JP', tier: 'D' },
+  { name: 'Finlanda', code: 'FI', tier: 'C' },
+  { name: 'Japonia', code: 'JP', tier: 'D' },
   { name: 'Israel', code: 'IL', tier: 'C' },
   { name: 'French Polynesia', code: 'PF', tier: 'C' },
   { name: 'Kuwait', code: 'KW', tier: 'B' },
   { name: 'Qatar', code: 'QA', tier: 'C' },
-  { name: 'Romania', code: 'RO', tier: 'B' },
+  { name: 'România', code: 'RO', tier: 'B' },
   { name: 'Estonia', code: 'EE', tier: 'A' },
   { name: 'Iceland', code: 'IS', tier: 'B' },
   { name: 'Jamaica', code: 'JM', tier: 'B' },
@@ -102,286 +98,106 @@ export const countries: Country[] = [
   { name: 'Luxembourg', code: 'LU', tier: 'B' },
   { name: 'New Caledonia', code: 'NC', tier: 'B' },
   { name: 'Peru', code: 'PE', tier: 'C' },
-  { name: 'Poland', code: 'PL', tier: 'C' },
-  { name: 'Czech Republic', code: 'CZ', tier: 'C' },
+  { name: 'Polonia', code: 'PL', tier: 'C' },
+  { name: 'Czec Republic', code: 'CZ', tier: 'C' },
   { name: 'Dominican Republic', code: 'DO', tier: 'C' },
-  { name: 'Slovakia', code: 'SK', tier: 'C' },
+  { name: 'Slovacia', code: 'SK', tier: 'C' },
   { name: 'Slovenia', code: 'SI', tier: 'C' },
   { name: 'Bulgaria', code: 'BG', tier: 'B' },
   { name: 'Cayman Islands', code: 'KY', tier: 'B' },
-  { name: 'Greece', code: 'GR', tier: 'C' },
-  { name: 'Portugal', code: 'PT', tier: 'B' },
-  { name: 'Turkey', code: 'TR', tier: 'D' },
-  { name: 'Mexico', code: 'MX', tier: 'B' },
+  { name: 'Grecia', code: 'GR', tier: 'C' },
+  { name: 'Portugalia', code: 'PT', tier: 'B' },
+  { name: 'Turcia', code: 'TR', tier: 'D' },
+  { name: 'Mexic', code: 'MX', tier: 'B' },
   { name: 'Chile', code: 'CL', tier: 'D' },
-  { name: 'South Africa', code: 'ZA', tier: 'C' },
+  { name: 'Africa de Sud', code: 'ZA', tier: 'C' },
   { name: 'Malaysia', code: 'MY', tier: 'D' },
   { name: 'India', code: 'IN', tier: 'C' },
-  { name: 'Indonesia', code: 'ID', tier: 'D' },
+  { name: 'Indonezia', code: 'ID', tier: 'D' },
   { name: 'Vietnam', code: 'VN', tier: 'D' },
-  { name: 'Philippines', code: 'PH', tier: 'D' },
-  { name: 'Thailand', code: 'TH', tier: 'C' },
+  { name: 'Filipine', code: 'PH', tier: 'D' },
+  { name: 'Thailanda', code: 'TH', tier: 'C' },
   { name: 'Tonga', code: 'TO', tier: 'C' },
   { name: 'Pakistan', code: 'PK', tier: 'D' },
   { name: 'Bangladesh', code: 'BD', tier: 'D' },
-  { name: 'South Korea', code: 'KR', tier: 'C' },
+  { name: 'Korea', code: 'KR', tier: 'C' },
   { name: 'Nigeria', code: 'NG', tier: 'C' },
   { name: 'Kenya', code: 'KE', tier: 'C' },
-  { name: 'Egypt', code: 'EG', tier: 'C' },
-  { name: 'Morocco', code: 'MA', tier: 'C' },
+  { name: 'Egipt', code: 'EG', tier: 'C' },
+  { name: 'Maroc', code: 'MA', tier: 'C' },
   { name: 'Namibia', code: 'NA', tier: 'C' },
-  { name: 'Ukraine', code: 'UA', tier: 'D' },
+  { name: 'Ucraina', code: 'UA', tier: 'D' },
 ]
-
-/* -------------------------------------------------------------------------- */
-/* Trading configuration                                                      */
-/* -------------------------------------------------------------------------- */
 
 export const LEVERAGE = 500
 export const RISK_UNITS = 15
 
-/**
- * Standard Forex contract:
- * 1.00 lot = 100,000 units of the base currency.
- */
+/** Un lot standard controlează 100.000 de unități din valuta de bază. */
 export const CONTRACT_SIZE = 100_000
-
-/**
- * Approximate pip value for 1.00 standard lot
- * on Forex pairs where USD is the quote currency.
- *
- * Example:
- * EUR/USD:
- * 1.00 lot ≈ $10 / pip
- */
+/** Valoarea unui pip pentru 1,00 lot standard pe perechi cu USD ca valută cotată. */
 export const PIP_VALUE_PER_LOT = 10
-
-/**
- * Minimum commonly used Forex lot.
- */
+/** Lotul minim tranzacționabil (micro-lot). */
 export const MIN_LOT = 0.01
 
 /**
- * Required margin for 1.00 standard lot at 1:500 leverage,
- * excluding price/conversion effects.
- *
- * 100,000 / 500 = $200
+ * Paritatea de loturi în funcție de leverage.
+ * Marja = (loturi × 100.000) / leverage.
+ * Pentru strategia WS Capital, $10 marjă pornește de la 0,10 lot.
+ * Deci volumul este 0,01 lot pentru fiecare $1 de marjă.
  */
-export const MARGIN_PER_STANDARD_LOT =
-  CONTRACT_SIZE / LEVERAGE
+export const MARGIN_PER_MIN_LOT = 1 // $1 marjă pentru 0,01 lot în strategia WS Capital
 
-/**
- * Required margin for the minimum 0.01 lot at 1:500.
- *
- * 0.01 × 100,000 / 500 = $2
- */
-export const MARGIN_PER_MIN_LOT =
-  MIN_LOT * MARGIN_PER_STANDARD_LOT
-
-/**
- * Calculate the lot size that corresponds to a given margin.
- *
- * Formula:
- *
- * margin = lots × contract size / leverage
- *
- * Therefore:
- *
- * lots = margin × leverage / contract size
- *
- * At 1:500:
- *
- * $2  -> 0.01 lot
- * $10 -> 0.05 lot
- * $20 -> 0.10 lot
- * $100 -> 0.50 lot
- */
+/** Câte loturi se deschid pentru o anumită marjă: $10 => 0,10 lot. */
 export function lotsForMargin(margin: number): number {
-  if (!Number.isFinite(margin) || margin <= 0) {
-    return 0
-  }
-
-  return (margin * LEVERAGE) / CONTRACT_SIZE
+  return (margin / MARGIN_PER_MIN_LOT) * MIN_LOT
 }
 
 /**
- * Calculate margin required for a given number of lots.
- */
-export function marginForLots(lots: number): number {
-  if (!Number.isFinite(lots) || lots <= 0) {
-    return 0
-  }
-
-  return (lots * CONTRACT_SIZE) / LEVERAGE
-}
-
-/**
- * Round a lot size down to the nearest allowed minimum lot.
- *
- * This prevents the UI from displaying a position size that
- * cannot normally be submitted if the broker requires 0.01
- * lot increments.
- */
-export function roundLotsToStep(
-  lots: number,
-  step = MIN_LOT,
-): number {
-  if (!Number.isFinite(lots) || lots <= 0) {
-    return 0
-  }
-
-  if (step <= 0) {
-    return lots
-  }
-
-  return Math.floor((lots + Number.EPSILON) / step) * step
-}
-
-/**
- * 4-level Martingale:
- *
- * N1 = 1 unit
- * N2 = 2 units
- * N3 = 4 units
- * N4 = 8 units
- *
- * 1 + 2 + 4 + 8 = 15
+ * Martingal pe 4 niveluri: depozitul este împărțit la 15 unități de risc.
+ * Nivelurile folosesc 1, 2, 4 și 8 unități (1+2+4+8 = 15),
+ * astfel încât cele 4 niveluri consumă exact 100% din depozitul alocat.
  */
 export const MARTINGALE_MULTIPLIERS = [1, 2, 4, 8] as const
 
 export type MartingaleLevel = {
   level: number
   multiplier: number
-
-  /** Capital allocated as margin for this level. */
   margin: number
-
-  /** Notional position value before price conversion. */
   notional: number
-
-  /** Position volume in standard lots. */
   lots: number
-
-  /** Approximate USD value of one pip for this position. */
   pipValue: number
-
   stopLossPips: number
   takeProfitPips: number
-
-  /** Monetary loss if SL is reached. */
   risk: number
-
-  /** Gross profit if TP is reached. */
   takeProfit: number
-
   cumulativeRisk: number
   cumulativeMargin: number
-
-  /**
-   * Net result if this level wins after all previous
-   * levels in the current series have lost.
-   */
   netIfWin: number
 }
 
-/**
- * Build the complete 4-level Martingale calculation.
- *
- * Important:
- *
- * The 1:500 leverage determines the position size from
- * the margin allocated to each level.
- *
- * SL and TP are then calculated from:
- *
- * position lots × pip value × pips
- *
- * Therefore the displayed monetary risk is no longer
- * artificially forced to equal the margin.
- */
 export function buildMartingaleLevels(
   deposit: number,
   stopLossPips = 20,
 ): MartingaleLevel[] {
-  const safeDeposit = Number.isFinite(deposit)
-    ? Math.max(0, deposit)
-    : 0
-
-  const safeStopLossPips = Number.isFinite(stopLossPips)
-    ? Math.max(1, stopLossPips)
-    : 20
-
-  /**
-   * The deposit is divided into exactly 15 units.
-   *
-   * Example with $150:
-   *
-   * $150 / 15 = $10 per unit
-   *
-   * N1 = $10
-   * N2 = $20
-   * N3 = $40
-   * N4 = $80
-   *
-   * Total = $150
-   */
-  const unit = safeDeposit / RISK_UNITS
-
+  const unit = Math.max(10, deposit / RISK_UNITS)
   let cumulativeRisk = 0
   let cumulativeMargin = 0
 
   return MARTINGALE_MULTIPLIERS.map((multiplier, index) => {
+    // Capitalul alocat nivelului este folosit drept marjă și se dublează pe fiecare nivel.
     const margin = unit * multiplier
-
-    /**
-     * Calculate lots from the actual 1:500 leverage relationship.
-     *
-     * Example for $150:
-     *
-     * N1 $10 margin -> 0.05 lot
-     * N2 $20 margin -> 0.10 lot
-     * N3 $40 margin -> 0.20 lot
-     * N4 $80 margin -> 0.40 lot
-     */
-    const rawLots = lotsForMargin(margin)
-
-    /**
-     * Keep the exact mathematical value here.
-     *
-     * The UI can display 2 decimals.
-     */
-    const lots = rawLots
-
+    // Leverage-ul determină expunerea și volumul de loturi deschis.
+    const lots = lotsForMargin(margin)
     const notional = lots * CONTRACT_SIZE
-
-    /**
-     * Approximate pip value for USD-quoted Forex pairs.
-     */
+    // Valoarea per pip depinde direct de volumul de loturi.
     const pipValue = lots * PIP_VALUE_PER_LOT
-
-    const takeProfitPips = safeStopLossPips * 2
-
-    /**
-     * Real monetary risk based on SL.
-     */
-    const risk = pipValue * safeStopLossPips
-
-    /**
-     * Real monetary gross profit based on TP.
-     */
-    const takeProfit = pipValue * takeProfitPips
-
+    // Strategia definește riscul ca unitatea alocată nivelului: N1 = $10,
+    // iar Take Profit este fix 2R: N1 = $20. Pips rămân afișați ca parametru de execuție.
+    const takeProfitPips = stopLossPips * 2
+    const risk = unit * multiplier
+    const takeProfit = risk * 2
     cumulativeRisk += risk
     cumulativeMargin += margin
-
-    /**
-     * If this level wins after all previous levels lost:
-     *
-     * current TP
-     * minus previous accumulated losses.
-     */
-    const netIfWin =
-      takeProfit - (cumulativeRisk - risk)
 
     return {
       level: index + 1,
@@ -390,80 +206,33 @@ export function buildMartingaleLevels(
       notional,
       lots,
       pipValue,
-      stopLossPips: safeStopLossPips,
+      stopLossPips,
       takeProfitPips,
       risk,
       takeProfit,
       cumulativeRisk,
       cumulativeMargin,
-      netIfWin,
+      netIfWin: takeProfit - (cumulativeRisk - risk),
     }
   })
 }
 
-/**
- * Build the 10-week capital doubling projection.
- *
- * Example:
- *
- * Week 1:  $150 -> $300
- * Week 2:  $300 -> $600
- * Week 3:  $600 -> $1,200
- * ...
- * Week 10: $76,800 -> $153,600
- *
- * This is a mathematical projection only.
- */
-export function buildDoublingPlan(
-  start = 150,
-  weeks = 10,
-) {
-  const safeStart = Number.isFinite(start)
-    ? Math.max(0, start)
-    : 0
-
-  const safeWeeks = Number.isFinite(weeks)
-    ? Math.max(0, Math.floor(weeks))
-    : 10
-
-  let balance = safeStart
-
-  return Array.from(
-    { length: safeWeeks },
-    (_, i) => {
-      const opening = balance
-
-      /**
-       * 100% weekly target = profit equal to
-       * the opening balance.
-       */
-      const profit = opening
-
-      /**
-       * Target profit for this particular week.
-       *
-       * This was previously hardcoded to 150,
-       * which was incorrect for weeks 2-10.
-       */
-      const target = opening
-
-      balance = opening + profit
-
-      return {
-        week: i + 1,
-        opening,
-        target,
-        profit,
-        closing: balance,
-        unit: opening / RISK_UNITS,
-      }
-    },
-  )
+export function buildDoublingPlan(start = 150, weeks = 10) {
+  let balance = start
+  return Array.from({ length: weeks }, (_, i) => {
+    const opening = balance
+    const profit = opening
+    balance = opening * 2
+    return {
+      week: i + 1,
+      opening,
+      target: 150,
+      profit,
+      closing: balance,
+      unit: opening / RISK_UNITS,
+    }
+  })
 }
-
-/* -------------------------------------------------------------------------- */
-/* Promotion                                                                  */
-/* -------------------------------------------------------------------------- */
 
 export const promotionChannels = [
   {
