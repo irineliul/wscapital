@@ -58,6 +58,7 @@ export function Hero() {
       setLang('ro')
     }
 
+    // Pornește video-ul automat după 5 secunde
     const timer = window.setTimeout(() => {
       const video = videoRef.current
 
@@ -65,7 +66,7 @@ export function Hero() {
         video.muted = true
 
         video.play().catch((error) => {
-          console.log('Autoplay blocked by browser:', error)
+          console.log('Video autoplay was blocked:', error)
         })
       }
     }, 5000)
@@ -139,18 +140,19 @@ export function Hero() {
           <div className="overflow-hidden rounded-2xl border border-primary-foreground/15 bg-primary-foreground/5 shadow-2xl">
 
             <video
+              ref={videoRef}
               className="block h-auto w-full"
-              autoPlay={videoStarted}
               muted
               playsInline
               controls
-              preload="metadata"
+              preload="auto"
               poster="/images/trading-terminal.png"
             >
               <source
                 src="/videos/wscapital.mp4"
                 type="video/mp4"
               />
+
               Your browser does not support the video tag.
             </video>
 
