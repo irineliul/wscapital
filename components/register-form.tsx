@@ -158,7 +158,7 @@ export function RegisterForm() {
               <span className="mx-auto flex size-14 items-center justify-center rounded-full bg-accent text-accent-foreground">
                 <CheckCircle2 className="size-7" aria-hidden="true" />
               </span>
-              <h3 className="mt-5 text-xl font-semibold">{content.successTitle}</h3>
+              <h3 className="mt-5 font-serif text-xl font-semibold">{content.successTitle}</h3>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                 {content.successTextPrefix}
                 {country.name}

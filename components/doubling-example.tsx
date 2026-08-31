@@ -73,7 +73,7 @@ export function DoublingExample() {
   const maxBar = final
 
   return (
-    <section id="exemplu" className="bg-primary py-16 text-primary-foreground lg:py-24">
+    <section id="exemplu" className="hero-striations bg-primary py-16 text-primary-foreground lg:py-24">
       <div className="mx-auto max-w-6xl px-4">
         <div className="max-w-3xl">
           <p className="text-xs font-semibold tracking-widest text-accent uppercase">

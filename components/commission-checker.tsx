@@ -155,7 +155,7 @@ export function CommissionChecker() {
 
           <div className="rounded-2xl border border-primary/20 bg-primary p-6 text-primary-foreground">
             <p className="text-sm text-primary-foreground/70">{tier.name}</p>
-            <h3 className="mt-1 text-xl font-semibold">{country.name}</h3>
+            <h3 className="mt-1 font-serif text-xl font-semibold">{country.name}</h3>
 
             <div className="mt-6 grid gap-4 sm:grid-cols-2">
               <div className="rounded-xl border border-primary-foreground/15 bg-primary-foreground/5 p-4">
