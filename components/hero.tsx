@@ -10,7 +10,7 @@ const t = {
     badge: 'AFFILIATE PROGRAM + LEVERAGE 1:500 BROKERAGE',
     title: 'Professional Investment Management with Martingale Strategy &',
     highlight: 'Up to $500 Earnings per Investor',
-    desc: 'As an affiliate partner, you earn up to $500 per activated investor, depending on the country tier. Investors receive free TradingView Pro, a free Pine Script robot created with AI, and access to Copy Trading. Deposit split into 15 units for 4 Martingale levels.',
+    desc: 'As an affiliate partner, you can earn up to $500 per activated investor, depending on the country tier. Investors receive free TradingView Pro, a free Pine Script robot created with AI, and access to Copy Trading. Deposit split into 15 units for 4 Martingale levels.',
     ctaRegister: 'Register now',
     ctaCommission: 'Check commissions by country',
     highlights: [
@@ -30,7 +30,7 @@ const t = {
     badge: 'PROGRAM DE AFILIERE + BROKERAJ CU LEVERAGE 1:500',
     title: 'Administrare Profesională a Investiției cu Strategia Martingale &',
     highlight: 'Până la $500 câștig per Investitor',
-    desc: 'Ca partener afiliat, beneficiezi de până la $500 pentru fiecare investitor activat, în funcție de grupa țării. Investitorii primesc TradingView Pro gratuit, un robot Pine Script creat cu AI și acces la Copy Trading. Depozitul este împărțit în 15 unități pentru 4 niveluri Martingale.',
+    desc: 'Ca partener afiliat, poți câștiga până la $500 pentru fiecare investitor activat, în funcție de grupa țării. Investitorii primesc TradingView Pro gratuit, un robot Pine Script creat cu AI și acces la Copy Trading. Depozitul este împărțit în 15 unități pentru 4 niveluri Martingale.',
     ctaRegister: 'Înregistrează-te acum',
     ctaCommission: 'Verifică comisioanele pe țară',
     highlights: [
@@ -53,8 +53,8 @@ export function Hero() {
   useEffect(() => {
     const saved = window.localStorage.getItem('site-language')
 
-    if (saved === 'ro' || saved === 'en') {
-      setLang(saved)
+    if (saved === 'ro') {
+      setLang('ro')
     }
   }, [])
 
@@ -104,22 +104,18 @@ export function Hero() {
           </div>
 
           <ul className="mt-10 grid grid-cols-2 gap-3">
-            {content.highlights.map((item) => {
-              const Icon = item.icon
-
-              return (
-                <li
-                  key={item.label}
-                  className="flex items-center gap-2 rounded-lg border border-primary-foreground/15 bg-primary-foreground/5 px-3 py-2 text-sm"
-                >
-                  <Icon
-                    className="size-4 shrink-0 text-accent"
-                    aria-hidden="true"
-                  />
-                  {item.label}
-                </li>
-              )
-            })}
+            {content.highlights.map((item) => (
+              <li
+                key={item.label}
+                className="flex items-center gap-2 rounded-lg border border-primary-foreground/15 bg-primary-foreground/5 px-3 py-2 text-sm"
+              >
+                <item.icon
+                  className="size-4 shrink-0 text-accent"
+                  aria-hidden="true"
+                />
+                {item.label}
+              </li>
+            ))}
           </ul>
         </div>
 
@@ -127,20 +123,17 @@ export function Hero() {
         <div className="relative">
           <div className="overflow-hidden rounded-2xl border border-primary-foreground/15 bg-primary-foreground/5 shadow-2xl">
             <video
-              className="block w-full h-auto"
-              autoPlay
-              muted
-              loop
-              playsInline
+              className="block h-auto w-full"
               controls
-              preload="auto"
+              muted
+              playsInline
+              preload="metadata"
               poster="/images/trading-terminal.png"
             >
               <source
                 src="/videos/wscapital.mp4"
                 type="video/mp4"
               />
-
               Your browser does not support the video tag.
             </video>
           </div>
