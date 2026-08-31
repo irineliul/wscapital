@@ -16,7 +16,7 @@ export default function Page() {
     <>
       <SiteHeader />
       <SiteTranslation />
-      <main>
+      <main className="site-theme">
         <Hero />
         <DoublingExample />
         <MartingaleStrategy />

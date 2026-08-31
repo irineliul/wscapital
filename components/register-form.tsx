@@ -129,7 +129,7 @@ export function RegisterForm() {
           <p className="text-xs font-semibold tracking-widest text-accent uppercase">
             {content.badge}
           </p>
-          <h2 className="mt-3 text-3xl font-semibold tracking-tight text-balance sm:text-4xl">
+          <h2 className="mt-3 font-serif text-3xl font-semibold tracking-tight text-balance sm:text-4xl">
             {content.title}
           </h2>
 
@@ -158,7 +158,7 @@ export function RegisterForm() {
               <span className="mx-auto flex size-14 items-center justify-center rounded-full bg-accent text-accent-foreground">
                 <CheckCircle2 className="size-7" aria-hidden="true" />
               </span>
-              <h3 className="mt-5 text-xl font-semibold">{content.successTitle}</h3>
+              <h3 className="mt-5 font-serif text-xl font-semibold">{content.successTitle}</h3>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                 {content.successTextPrefix}
                 {country.name}

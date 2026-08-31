@@ -40,7 +40,7 @@ const t = {
     directComm: 'Comision direct',
     perActive: 'per investitor activat',
     subComm: 'Sub-afiliere',
-    perSub: 'per investitor al sub-afiliatului',
+    perSub: 'per investitor al sub-afiliatei',
     minDep: 'Depozit pentru activare',
     minVol: 'Rulaj minim de tranzacționare',
     lotsSuffix: 'loturi standard',
@@ -54,7 +54,6 @@ const t = {
 
 export function CommissionChecker() {
   const [lang, setLang] = useState<'en' | 'ro'>('en')
-  // Schimbat din 'RO' în 'GB' pentru United Kingdom
   const [code, setCode] = useState('GB')
   const [investors, setInvestors] = useState(5)
   const [subInvestors, setSubInvestors] = useState(10)
@@ -80,13 +79,13 @@ export function CommissionChecker() {
   )
 
   return (
-    <section id="comisioane" className="hero-striations bg-background py-16 lg:py-24">
+    <section id="comisioane" className="hero-striations bg-background py-16 text-foreground lg:py-24">
       <div className="mx-auto max-w-6xl px-4">
         <div className="max-w-3xl">
-          <p className="text-xs font-semibold tracking-widest text-accent-foreground/70 uppercase">
+          <p className="text-xs font-semibold tracking-widest text-primary uppercase">
             {content.badge}
           </p>
-          <h2 className="mt-3 text-3xl font-semibold tracking-tight text-balance sm:text-4xl">
+          <h2 className="mt-3 font-serif text-3xl font-semibold tracking-tight text-balance text-foreground sm:text-4xl">
             {content.title}
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
@@ -95,19 +94,20 @@ export function CommissionChecker() {
         </div>
 
         <div className="mt-10 grid gap-6 lg:grid-cols-[1fr_1.1fr]">
-          <div className="rounded-2xl border border-border bg-secondary/60 p-6">
-            <div className="flex items-center gap-2 text-sm font-medium">
-              <Globe2 className="size-4 text-accent-foreground" aria-hidden="true" />
+          {/* Cardul Stânga - Setări / Sliders */}
+          <div className="rounded-2xl border border-border bg-card p-6 text-card-foreground shadow-sm">
+            <div className="flex items-center gap-2 text-sm font-medium text-foreground">
+              <Globe2 className="size-4 text-primary" aria-hidden="true" />
               {content.selectCountry}
             </div>
             <select
               aria-label={content.selectCountry}
               value={code}
               onChange={(e) => setCode(e.target.value)}
-              className="mt-3 w-full rounded-lg border border-input bg-card px-3 py-2.5 text-sm outline-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/40"
+              className="mt-3 w-full rounded-lg border border-input bg-background px-3 py-2.5 text-sm text-foreground outline-none transition-colors focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring"
             >
               {sorted.map((c) => (
-                <option key={c.code} value={c.code}>
+                <option key={c.code} value={c.code} className="bg-background text-foreground">
                   {c.name}
                 </option>
               ))}
@@ -117,10 +117,10 @@ export function CommissionChecker() {
               <div>
                 <label
                   htmlFor="investors"
-                  className="flex items-center justify-between text-sm font-medium"
+                  className="flex items-center justify-between text-sm font-medium text-foreground"
                 >
                   {content.directLabel}
-                  <span className="font-mono text-accent-foreground">{investors}</span>
+                  <span className="font-mono font-bold text-primary">{investors}</span>
                 </label>
                 <input
                   id="investors"
@@ -129,16 +129,16 @@ export function CommissionChecker() {
                   max={50}
                   value={investors}
                   onChange={(e) => setInvestors(Number(e.target.value))}
-                  className="mt-3 w-full accent-primary"
+                  className="mt-3 w-full accent-primary cursor-pointer"
                 />
               </div>
               <div>
                 <label
                   htmlFor="sub-investors"
-                  className="flex items-center justify-between text-sm font-medium"
+                  className="flex items-center justify-between text-sm font-medium text-foreground"
                 >
                   {content.subLabel}
-                  <span className="font-mono text-accent-foreground">{subInvestors}</span>
+                  <span className="font-mono font-bold text-primary">{subInvestors}</span>
                 </label>
                 <input
                   id="sub-investors"
@@ -147,60 +147,62 @@ export function CommissionChecker() {
                   max={200}
                   value={subInvestors}
                   onChange={(e) => setSubInvestors(Number(e.target.value))}
-                  className="mt-3 w-full accent-primary"
+                  className="mt-3 w-full accent-primary cursor-pointer"
                 />
               </div>
             </div>
           </div>
 
-          <div className="rounded-2xl border border-primary/20 bg-primary p-6 text-primary-foreground">
-            <p className="text-sm text-primary-foreground/70">{tier.name}</p>
-            <h3 className="mt-1 text-xl font-semibold">{country.name}</h3>
+          {/* Cardul Dreapta - Rezultate */}
+          <div className="rounded-2xl border border-primary/30 bg-primary p-6 text-primary-foreground shadow-md">
+            <p className="text-xs font-medium uppercase tracking-wider text-primary-foreground/80">{tier.name}</p>
+            <h3 className="mt-1 font-serif text-2xl font-semibold text-primary-foreground">{country.name}</h3>
 
             <div className="mt-6 grid gap-4 sm:grid-cols-2">
-              <div className="rounded-xl border border-primary-foreground/15 bg-primary-foreground/5 p-4">
-                <p className="text-xs text-primary-foreground/70">{content.directComm}</p>
-                <p className="mt-1 font-mono text-3xl font-semibold text-accent">
+              <div className="rounded-xl border border-primary-foreground/20 bg-primary-foreground/10 p-4">
+                <p className="text-xs text-primary-foreground/80">{content.directComm}</p>
+                <p className="mt-1 font-mono text-3xl font-bold text-primary-foreground">
                   {usd(tier.commission)}
                 </p>
-                <p className="mt-1 text-xs text-primary-foreground/70">
+                <p className="mt-1 text-xs text-primary-foreground/75">
                   {content.perActive}
                 </p>
               </div>
-              <div className="rounded-xl border border-primary-foreground/15 bg-primary-foreground/5 p-4">
-                <p className="text-xs text-primary-foreground/70">{content.subComm}</p>
-                <p className="mt-1 font-mono text-3xl font-semibold text-accent">
+              <div className="rounded-xl border border-primary-foreground/20 bg-primary-foreground/10 p-4">
+                <p className="text-xs text-primary-foreground/80">{content.subComm}</p>
+                <p className="mt-1 font-mono text-3xl font-bold text-primary-foreground">
                   {usd(tier.commission / 10)}
                 </p>
-                <p className="mt-1 text-xs text-primary-foreground/70">
+                <p className="mt-1 text-xs text-primary-foreground/75">
                   {content.perSub}
                 </p>
               </div>
             </div>
 
-            <dl className="mt-5 grid gap-2 border-t border-primary-foreground/15 pt-5 text-sm">
+            <dl className="mt-5 grid gap-2 border-t border-primary-foreground/20 pt-5 text-sm">
               <div className="flex justify-between">
-                <dt className="text-primary-foreground/70">{content.minDep}</dt>
-                <dd className="font-mono">{usd(tier.minDeposit)}</dd>
+                <dt className="text-primary-foreground/80">{content.minDep}</dt>
+                <dd className="font-mono font-medium">{usd(tier.minDeposit)}</dd>
               </div>
               <div className="flex justify-between">
-                <dt className="text-primary-foreground/70">{content.minVol}</dt>
-                <dd className="font-mono">{tier.minVolume} {content.lotsSuffix}</dd>
+                <dt className="text-primary-foreground/80">{content.minVol}</dt>
+                <dd className="font-mono font-medium">{tier.minVolume} {content.lotsSuffix}</dd>
               </div>
               <div className="flex justify-between">
-  <dt className="text-primary-foreground/70">{content.payout}</dt>
-  <dd className="font-mono">
-    {tier.payout === 'Lunar' ? (lang === 'ro' ? 'Lunar' : 'Monthly') : tier.payout}
-  </dd>
-</div>
+                <dt className="text-primary-foreground/80">{content.payout}</dt>
+                <dd className="font-mono font-medium">
+                  {tier.payout === 'Lunar' ? (lang === 'ro' ? 'Lunar' : 'Monthly') : tier.payout}
+                </dd>
+              </div>
             </dl>
 
-            <div className="mt-6 rounded-xl bg-accent p-5 text-accent-foreground">
-              <p className="text-xs font-semibold tracking-widest uppercase opacity-80">
+            {/* Caseta cu Venit Estimat */}
+            <div className="mt-6 rounded-xl border border-primary-foreground/20 bg-primary-foreground/15 p-5 text-primary-foreground backdrop-blur-xs">
+              <p className="text-xs font-semibold tracking-widest uppercase opacity-90">
                 {content.estRev}
               </p>
-              <p className="mt-1 font-mono text-4xl font-semibold">{usd(direct + sub)}</p>
-              <p className="mt-2 text-sm">
+              <p className="mt-1 font-mono text-4xl font-bold">{usd(direct + sub)}</p>
+              <p className="mt-2 text-sm text-primary-foreground/90">
                 {usd(direct)} {content.fromDirect} + {usd(sub)} {content.fromSub}
               </p>
             </div>
@@ -209,7 +211,7 @@ export function CommissionChecker() {
               href="#inregistrare"
               className={cn(
                 buttonVariants(),
-                'mt-6 h-11 w-full bg-primary-foreground px-6 text-base text-primary hover:bg-primary-foreground/90',
+                'mt-6 h-11 w-full bg-primary-foreground px-6 text-base font-semibold text-primary shadow-sm hover:bg-primary-foreground/90',
               )}
             >
               {content.registerNow}

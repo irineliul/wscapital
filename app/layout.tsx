@@ -1,9 +1,10 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
-import { Manrope, JetBrains_Mono } from 'next/font/google'
+import { JetBrains_Mono, Manrope, Playfair_Display } from 'next/font/google'
 import './globals.css'
 
 const _manrope = Manrope({ subsets: ['latin'] })
+const _playfair = Playfair_Display({ subsets: ['latin'] })
 const _jetbrainsMono = JetBrains_Mono({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -29,7 +30,7 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   colorScheme: 'light',
-  themeColor: '#0d3b2a',
+  themeColor: '#8caf91',
 }
 
 export default function RootLayout({
