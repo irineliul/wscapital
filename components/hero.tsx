@@ -53,8 +53,8 @@ export function Hero() {
   useEffect(() => {
     const saved = window.localStorage.getItem('site-language')
 
-    if (saved === 'ro') {
-      setLang('ro')
+    if (saved === 'ro' || saved === 'en') {
+      setLang(saved)
     }
   }, [])
 
@@ -64,7 +64,6 @@ export function Hero() {
     <section className="hero-striations relative overflow-hidden bg-primary text-primary-foreground">
       <div className="mx-auto grid max-w-6xl gap-12 px-4 py-16 lg:grid-cols-2 lg:items-center lg:py-24">
 
-        {/* LEFT SIDE */}
         <div>
           <p className="inline-flex items-center gap-2 rounded-full border border-accent/40 bg-accent/10 px-3 py-1 text-xs font-medium tracking-wide text-accent uppercase">
             {content.badge}
@@ -119,14 +118,14 @@ export function Hero() {
           </ul>
         </div>
 
-        {/* RIGHT SIDE - VIDEO */}
         <div className="relative">
           <div className="overflow-hidden rounded-2xl border border-primary-foreground/15 bg-primary-foreground/5 shadow-2xl">
 
             <video
-              className="block h-auto w-full"
+              className="block w-full"
               autoPlay
               muted
+              loop
               playsInline
               controls
               preload="auto"
@@ -136,13 +135,10 @@ export function Hero() {
                 src="/videos/wscapital.mp4"
                 type="video/mp4"
               />
-
-              Your browser does not support the video tag.
             </video>
 
           </div>
 
-          {/* STATS */}
           <dl className="mt-4 grid grid-cols-3 gap-3 text-center">
             {content.stats.map((stat) => (
               <div
