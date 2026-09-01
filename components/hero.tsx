@@ -64,7 +64,7 @@ export function Hero() {
       videoRef.current?.play().catch(() => {
         // Autoplay can still be blocked by the browser.
       })
-    }, 10000)
+    }, 15000)
 
     return () => window.clearTimeout(timeout)
   }, [])
