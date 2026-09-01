@@ -135,7 +135,7 @@ export function Hero() {
   <div className="overflow-hidden rounded-2xl border border-primary-foreground/15 bg-primary-foreground/5 shadow-2xl">
     <video
       ref={videoRef}
-      className="block aspect-[9/16] h-auto w-full object-cover"
+      className="block aspect-square h-auto w-full object-contain"
       controls
       muted
       playsInline
