@@ -13,14 +13,12 @@ const t = {
     desc: 'As an affiliate partner, you can earn up to $500 per activated investor, depending on the country tier. Investors receive free TradingView Pro, a free Pine Script robot created with AI, and access to Copy Trading. Deposit split into 15 units for 4 Martingale levels.',
     ctaRegister: 'Register now',
     ctaCommission: 'Check commissions by country',
-
     highlights: [
       { icon: LineChart, label: '1:500 Leverage' },
       { icon: BadgeCheck, label: 'Free TradingView Pro' },
       { icon: Bot, label: 'Free Pine Script Robot' },
       { icon: Copy, label: 'Brokerage Copy Trading' },
     ],
-
     stats: [
       { k: '15', v: 'Units' },
       { k: 'Free', v: 'Affiliate' },
@@ -35,14 +33,12 @@ const t = {
     desc: 'Ca partener afiliat, poți câștiga până la $500 pentru fiecare investitor activat, în funcție de grupa țării. Investitorii primesc TradingView Pro gratuit, un robot Pine Script creat cu AI și acces la Copy Trading. Depozitul este împărțit în 15 unități pentru 4 niveluri Martingale.',
     ctaRegister: 'Înregistrează-te acum',
     ctaCommission: 'Verifică comisioanele pe țară',
-
     highlights: [
       { icon: LineChart, label: 'Leverage 1:500' },
       { icon: BadgeCheck, label: 'TradingView Pro gratuit' },
       { icon: Bot, label: 'Robot Pine Script gratuit' },
       { icon: Copy, label: 'Copy Trading în brokeraj' },
     ],
-
     stats: [
       { k: '15', v: 'Unități' },
       { k: 'Gratuit', v: 'Afiliere' },
@@ -57,28 +53,9 @@ export function Hero() {
   useEffect(() => {
     const saved = window.localStorage.getItem('site-language')
 
-    if (saved === 'ro') {
-      setLang('ro')
+    if (saved === 'ro' || saved === 'en') {
+      setLang(saved)
     }
-  }, [])
-
-  useEffect(() => {
-    const timer = window.setTimeout(() => {
-      const video = document.getElementById(
-        'wscapital-hero-video',
-      ) as HTMLVideoElement | null
-
-      if (video) {
-        video.muted = true
-
-        video.play().catch(() => {
-          // Browserul poate bloca autoplay-ul.
-          // Utilizatorul poate porni video-ul manual.
-        })
-      }
-    }, 5000)
-
-    return () => window.clearTimeout(timer)
   }, [])
 
   const content = t[lang]
@@ -136,7 +113,6 @@ export function Hero() {
                   className="size-4 shrink-0 text-accent"
                   aria-hidden="true"
                 />
-
                 {item.label}
               </li>
             ))}
@@ -148,14 +124,25 @@ export function Hero() {
           <div className="overflow-hidden rounded-2xl border border-primary-foreground/15 bg-primary-foreground/5 shadow-2xl">
 
             <video
-              id="wscapital-hero-video"
+              id="hero-video"
               className="block h-auto w-full"
               muted
               playsInline
-              loop
               controls
-              preload="metadata"
+              loop
+              preload="auto"
               poster="/images/trading-terminal.png"
+              onLoadedMetadata={(event) => {
+                const video = event.currentTarget
+
+                window.setTimeout(() => {
+                  video.muted = true
+                  video.play().catch(() => {
+                    // Browser-ul poate bloca autoplay-ul.
+                    // Butonul Play rămâne disponibil.
+                  })
+                }, 5000)
+              }}
             >
               <source
                 src="/videos/wscapital.mp4"
