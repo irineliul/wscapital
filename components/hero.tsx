@@ -120,39 +120,21 @@ export function Hero() {
         </div>
 
         {/* RIGHT SIDE - VIDEO */}
-        <div className="relative">
-          <div className="overflow-hidden rounded-2xl border border-primary-foreground/15 bg-primary-foreground/5 shadow-2xl">
-
-            <video
-              id="hero-video"
-              className="block h-auto w-full"
-              muted
-              playsInline
-              controls
-              loop
-              preload="auto"
-              poster="/images/trading-terminal.png"
-              onLoadedMetadata={(event) => {
-                const video = event.currentTarget
-
-                window.setTimeout(() => {
-                  video.muted = true
-                  video.play().catch(() => {
-                    // Browser-ul poate bloca autoplay-ul.
-                    // Butonul Play rămâne disponibil.
-                  })
-                }, 5000)
-              }}
-            >
-              <source
-                src="/videos/wscapital.mp4"
-                type="video/mp4"
-              />
-
-              Your browser does not support the video tag.
-            </video>
-
-          </div>
+<div className="relative">
+  <div className="overflow-hidden rounded-2xl border border-primary-foreground/15 bg-primary-foreground/5 shadow-2xl">
+    <video
+      className="block h-auto w-full"
+      controls
+      muted
+      playsInline
+      loop
+      preload="metadata"
+      poster="/images/trading-terminal.png"
+    >
+      <source src="/videos/wscapital.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
 
           {/* STATS */}
           <dl className="mt-4 grid grid-cols-3 gap-3 text-center">
