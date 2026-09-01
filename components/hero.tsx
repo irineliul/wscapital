@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { buttonVariants } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 import { BadgeCheck, Bot, Copy, LineChart } from 'lucide-react'
@@ -49,6 +49,7 @@ const t = {
 
 export function Hero() {
   const [lang, setLang] = useState<'en' | 'ro'>('en')
+  const videoRef = useRef<HTMLVideoElement>(null)
 
   useEffect(() => {
     const saved = window.localStorage.getItem('site-language')
@@ -56,6 +57,16 @@ export function Hero() {
     if (saved === 'ro' || saved === 'en') {
       setLang(saved)
     }
+  }, [])
+
+  useEffect(() => {
+    const timeout = window.setTimeout(() => {
+      videoRef.current?.play().catch(() => {
+        // Autoplay can still be blocked by the browser.
+      })
+    }, 5000)
+
+    return () => window.clearTimeout(timeout)
   }, [])
 
   const content = t[lang]
@@ -123,15 +134,17 @@ export function Hero() {
 <div className="relative">
   <div className="overflow-hidden rounded-2xl border border-primary-foreground/15 bg-primary-foreground/5 shadow-2xl">
     <video
-      className="block h-auto w-full"
+      ref={videoRef}
+      className="block aspect-[9/16] h-auto w-full object-cover"
       controls
       muted
       playsInline
       loop
       preload="metadata"
       poster="/images/trading-terminal.png"
+      aria-label="WS Capital trading video"
     >
-      <source src="/videos/wscapital.mp4" type="video/mp4" />
+      <source src="/video/wscapital.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
   </div>
