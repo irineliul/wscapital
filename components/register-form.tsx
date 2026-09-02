@@ -26,7 +26,7 @@ const t = {
     perks: [
       '1:500 Leverage on trading account',
       'Free TradingView Pro activated',
-      'Free Trading Robot after activate — script for Pine Editor',
+      'Free Trading Robot — script for Pine Editor',
       'Copy Trading access + video setup guide',
       'Affiliate & sub-affiliate link dashboard',
     ],
@@ -133,7 +133,6 @@ export function RegisterForm() {
             {content.title}
           </h2>
 
-          {/* Cele 2 texte plasate direct sub titlu */}
           <div className="mt-6 space-y-4 text-primary-foreground/90">
             {content.accountTypes.map((item) => (
               <p key={item.title} className="text-base leading-relaxed">

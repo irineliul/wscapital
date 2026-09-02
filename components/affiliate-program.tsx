@@ -9,9 +9,9 @@ const usd = (n: number) =>
 
 const t = {
   en: {
-    badge: 'Partnership Program',
-    title: 'Affiliate and sub-affiliate: Up to $500 per active investor',
-    desc: 'Two-tier structure, paid after verification of deposit and trading turnover. Commission depends on the country tier.',
+    badge: 'FREE AFFILIATE PARTNERSHIP PROGRAM',
+    title: 'Free Affiliate Partnership — Up to $500 per Active Investor',
+    desc: 'Join the Affiliate Partnership Program for free. Earn up to $500 per active investor, depending on the country tier. Commissions are paid after verification of the investor’s deposit and minimum trading turnover. Build your own sub-affiliate team and earn additional commissions.',
     steps: [
       {
         icon: UserPlus,
@@ -26,7 +26,7 @@ const t = {
       {
         icon: Users,
         title: '3. Multi-Territory Scaling',
-        text: 'Run campaigns across multiple countries simultaneously; commission rates apply automatically based on tier.',
+        text: 'Run campaigns across multiple countries simultaneously; commission rates apply automatically based on tier. Reinvest your profits to scale your capital, expand your campaigns, and grow your affiliate network.',
       },
     ],
     tableCaption: 'Commission rates grouped by countries',
@@ -47,9 +47,9 @@ const t = {
     ],
   },
   ro: {
-    badge: 'Program de parteneriat',
-    title: 'Afiliere și sub-afiliere: până la $500 per investitor activat',
-    desc: 'Structură pe două niveluri, cu plată după validarea depozitului și a rulajului de tranzacționare. Comisionul depinde de țară.',
+    badge: 'PROGRAM DE PARTENERIAT AFILIAT GRATUIT',
+    title: 'Parteneriat Afiliat Gratuit — Până la $500 per Investitor Activat',
+    desc: 'Înscrierea în programul de afiliere este gratuită. Poți câștiga până la $500 pentru fiecare investitor activat, în funcție de grupa țării. Comisioanele sunt plătite după verificarea depozitului și a rulajului minim de tranzacționare. Construiește propria echipă de sub-afiliați și obține comisioane suplimentare.',
     steps: [
       {
         icon: UserPlus,
@@ -63,8 +63,8 @@ const t = {
       },
       {
         icon: Users,
-        title: '3. Scalare pe teritorii',
-        text: 'Rulezi campanii pe mai multe țări în paralel, iar comisionul se aplică automat conform grupei fiecărui teritoriu.',
+        title: '3. Scalare în Mai Multe Țări',
+        text: 'Rulează campanii în mai multe țări simultan; ratele de comision se aplică automat în funcție de nivel. Reinvestește profiturile pentru a-ți crește capitalul, a-ți extinde aria de promovare și a-ți dezvolta rețeaua de afiliați.',
       },
     ],
     tableCaption: 'Grile de comision pe grupe de țări',
