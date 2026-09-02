@@ -16,7 +16,7 @@ const navItems = {
     { href: '#promovare',   label: 'Promotions' },
   ],
   ro: [
-    { href: '#exemplu',     label: 'Calcul' },
+    { href: '#exemplu',     label: 'Exemplu calcul' },
     { href: '#strategie',   label: 'Strategie' },
     { href: '#instrumente', label: 'Instrumente' },
     { href: '#afiliere',    label: 'Afiliere' },
