@@ -29,7 +29,7 @@ const t = {
       {
         icon: Code2,
         title: 'Pine Editor Script',
-        text: 'Copy the script into Pine Editor, add it to your chart, and receive entry signals with automated SL/TP.',
+        text: 'Copy the script into Pine Editor, add it to your 1 min chart, and receive entry signals with automated SL/TP.',
         tag: 'Signals',
       },
       {
