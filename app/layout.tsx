@@ -26,6 +26,14 @@ export const metadata: Metadata = {
     url: "https://wscapital.app",
     siteName: "WS Capital",
     type: "website",
+    images: [
+      {
+        url: "https://wscapital.app/images/og-facebook.png",
+        width: 1200,
+        height: 630,
+        alt: "WS Capital trading platform",
+      },
+    ],
   },
 
   twitter: {
@@ -36,6 +44,7 @@ export const metadata: Metadata = {
 
     description:
       "Join the WS Capital Free Affiliate Partnership Program and earn up to $500 per active investor. Access Martingale Trading, 1:500 leverage, Copy Trading and a free Pine Script trading robot.",
+    images: ["https://wscapital.app/images/og-facebook.png"],
   },
 
   alternates: {
