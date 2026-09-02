@@ -39,7 +39,7 @@ const t = {
     descPrefix: 'Obiectivul este simplu și repetabil: ',
     descTarget: '+100% pe săptămână',
     descMiddle: '. La începutul fiecărei săptămâni recalculezi unitatea de risc (soldul împărțit la ',
-    descSuffix: ') și rulezi seria martingal pe 4 niveluri până atingi ținta. Când soldul se dublează, oprești săptămâna și repornești cu noul sold.',
+    descSuffix: ') și rulezi seria Martingale pe 4 niveluri până atingi ținta. Când soldul se dublează, oprești săptămâna și repornești cu noul sold.',
     caption: 'Plan de dublare a capitalului pe 10 săptămâni, pornind de la 150 de dolari',
     cols: {
       week: 'Săptămâna',
@@ -55,7 +55,7 @@ const t = {
       { k: '×1.024', v: 'Multiplicator după 10 dublări' },
       { k: 'Sold final teoretic', isDynamic: true },
     ],
-    disclaimer: 'Acest exemplu este o proiecție matematică a unei creșteri de 100% pe săptămână, nu o promisiune de randament. O singură serie martingal pierdută integral (toate cele 4 niveluri) șterge depozitul alocat săptămânii respective. Tranzacționarea cu leverage implică risc ridicat de pierdere a capitalului.',
+    disclaimer: 'Acest exemplu este o proiecție matematică a unei creșteri de 100% pe săptămână, nu o promisiune de randament. O singură serie Martingale pierdută integral (toate cele 4 niveluri) șterge depozitul alocat săptămânii respective. Tranzacționarea cu leverage implică risc ridicat de pierdere a capitalului.',
   },
 }
 
