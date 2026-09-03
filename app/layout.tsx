@@ -28,15 +28,31 @@ export const metadata: Metadata = {
     type: "website",
   },
 
-  twitter: {
-    card: "summary_large_image",
+  openGraph: {
+  title: "WS Capital — Free Forex Affiliate Program | Up to $500 per Investor",
+  description:
+    "Join for free and earn up to $500 per active investor. Access Martingale Trading, 1:500 leverage, Copy Trading and a free Pine Script trading robot.",
+  url: "https://wscapital.app",
+  siteName: "WS Capital",
+  type: "website",
+  images: [
+    {
+      url: "https://wscapital.app/images/wscapital-og.png",
+      width: 1200,
+      height: 630,
+      alt: "WS Capital — Free Forex Affiliate Program, Martingale Trading and 1:500 Leverage",
+    },
+  ],
+},
 
-    title:
-      "WS Capital — Free Affiliate Program | Up to $500 per Investor | Martingale Trading",
-
-    description:
-      "Join the WS Capital Free Affiliate Partnership Program and earn up to $500 per active investor. Access Martingale Trading, 1:500 leverage, Copy Trading and a free Pine Script trading robot.",
-  },
+twitter: {
+  card: "summary_large_image",
+  title:
+    "WS Capital — Free Affiliate Program | Up to $500 per Investor | Martingale Trading",
+  description:
+    "Join the WS Capital Free Affiliate Partnership Program and earn up to $500 per active investor. Access Martingale Trading, 1:500 leverage, Copy Trading and a free Pine Script trading robot.",
+  images: ["https://wscapital.app/images/wscapital-og.png"],
+},
 
   alternates: {
     canonical: "https://wscapital.app",
