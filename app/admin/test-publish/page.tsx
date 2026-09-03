@@ -12,7 +12,7 @@ export default function TestPublishPage() {
     setResponse(null)
 
     try {
-      const result = await fetch('/webhook', {
+      const result = await fetch('/admin/test-publish/publish', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(highLeverageForexArticle),
