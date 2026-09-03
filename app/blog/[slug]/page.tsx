@@ -32,23 +32,30 @@ export async function generateMetadata({
   }
 
   const title = post.meta_title || post.title
+
   const description =
     post.meta_description ||
     'Forex trading insights, risk management, leverage and trading strategies from WS Capital.'
 
-  const canonicalUrl = `https://wscapital.app/blog/${post.slug}`
+  const canonicalUrl = new URL(
+    `/blog/${post.slug}`,
+    'https://wscapital.app'
+  ).toString()
 
   return {
     title,
     description,
+
     alternates: {
       canonical: canonicalUrl,
     },
+
     openGraph: {
       title,
       description,
       url: canonicalUrl,
       type: 'article',
+
       ...(post.featured_image
         ? {
             images: [
@@ -60,10 +67,12 @@ export async function generateMetadata({
           }
         : {}),
     },
+
     twitter: {
       card: 'summary_large_image',
       title,
       description,
+
       ...(post.featured_image
         ? {
             images: [post.featured_image],
