@@ -1,3 +1,4 @@
+import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { createClient } from '@supabase/supabase-js'
 
@@ -10,6 +11,66 @@ type PageProps = {
   params: Promise<{
     slug: string
   }>
+}
+
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const { slug } = await params
+
+  const { data: post } = await supabase
+    .from('blog_posts')
+    .select('title, meta_title, meta_description, featured_image, slug')
+    .eq('slug', slug)
+    .eq('published', true)
+    .single()
+
+  if (!post) {
+    return {
+      title: 'Article Not Found | WS Capital',
+    }
+  }
+
+  const title = post.meta_title || post.title
+  const description =
+    post.meta_description ||
+    'Forex trading insights, risk management, leverage and trading strategies from WS Capital.'
+
+  const canonicalUrl = `https://wscapital.app/blog/${post.slug}`
+
+  return {
+    title,
+    description,
+    alternates: {
+      canonical: canonicalUrl,
+    },
+    openGraph: {
+      title,
+      description,
+      url: canonicalUrl,
+      type: 'article',
+      ...(post.featured_image
+        ? {
+            images: [
+              {
+                url: post.featured_image,
+                alt: post.title,
+              },
+            ],
+          }
+        : {}),
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      ...(post.featured_image
+        ? {
+            images: [post.featured_image],
+          }
+        : {}),
+    },
+  }
 }
 
 export default async function BlogArticlePage({ params }: PageProps) {
