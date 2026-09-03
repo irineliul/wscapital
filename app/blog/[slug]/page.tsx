@@ -20,7 +20,9 @@ export async function generateMetadata({
 
   const { data: post } = await supabase
     .from('blog_posts')
-    .select('title, meta_title, meta_description, featured_image, slug')
+    .select(
+      'title, meta_title, meta_description, featured_image, slug'
+    )
     .eq('slug', slug)
     .eq('published', true)
     .single()
@@ -37,10 +39,8 @@ export async function generateMetadata({
     post.meta_description ||
     'Forex trading insights, risk management, leverage and trading strategies from WS Capital.'
 
-  const canonicalUrl = new URL(
-    `/blog/${post.slug}`,
-    'https://wscapital.app'
-  ).toString()
+  const canonicalUrl =
+    'https://wscapital.app/blog/' + post.slug
 
   return {
     title,
@@ -56,16 +56,14 @@ export async function generateMetadata({
       url: canonicalUrl,
       type: 'article',
 
-      ...(post.featured_image
-        ? {
-            images: [
-              {
-                url: post.featured_image,
-                alt: post.title,
-              },
-            ],
-          }
-        : {}),
+      ...(post.featured_image && {
+        images: [
+          {
+            url: post.featured_image,
+            alt: post.title,
+          },
+        ],
+      }),
     },
 
     twitter: {
@@ -73,16 +71,16 @@ export async function generateMetadata({
       title,
       description,
 
-      ...(post.featured_image
-        ? {
-            images: [post.featured_image],
-          }
-        : {}),
+      ...(post.featured_image && {
+        images: [post.featured_image],
+      }),
     },
   }
 }
 
-export default async function BlogArticlePage({ params }: PageProps) {
+export default async function BlogArticlePage({
+  params,
+}: PageProps) {
   const { slug } = await params
 
   const { data: post, error } = await supabase
