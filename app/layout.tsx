@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-  title: "WS Capital — Free Forex Affiliate Program | Up to $500 per Investor",
+  title: "WS Capital — Free Forex Affiliate Program | Up to $500 per Investor | Martingale Trading",
   description:
     "Join for free and earn up to $500 per active investor. Access Martingale Trading, 1:500 leverage, Copy Trading and a free Pine Script trading robot.",
   url: "https://wscapital.app",
