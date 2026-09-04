@@ -101,21 +101,7 @@ Trading costs are part of the strategy, not an afterthought.
 
 Martingale money management increases position size after a losing trade in an attempt to recover prior losses.
 <p>
-  For a detailed breakdown of the 1-2-4-8 system, cumulative losses and position sizing,
-  see our guide to the{' '}
-  <a href="/blog/martingale-forex-strategy-1-2-4-8-risk-management">
-    Martingale Forex Strategy: 1-2-4-8 Risk Management
-  </a>.
-</p>
-A four-level sequence using 1, 2, 4, and 8 units requires 15 total units if all four trades lose. <p>
-  For a detailed breakdown of the 1-2-4-8 system, cumulative losses and position sizing,
-  see our guide to the{' '}
-  <a href="/blog/martingale-forex-strategy-1-2-4-8-risk-management">
-    Martingale Forex Strategy: 1-2-4-8 Risk Management
-  </a>.
-</p><p>
-  For a detailed breakdown of the 1-2-4-8 system, cumulative losses and position sizing,
-  see our guide to the{' '}
+  For a detailed breakdown of the 1-2-4-8 system, cumulative losses and position sizing, see our guide to
   <a href="/blog/martingale-forex-strategy-1-2-4-8-risk-management">
     Martingale Forex Strategy: 1-2-4-8 Risk Management
   </a>.
