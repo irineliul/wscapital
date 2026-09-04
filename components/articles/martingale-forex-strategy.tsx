@@ -172,7 +172,13 @@ export const martingaleForexStrategyArticle = {
 <h2>How Should You Set Stops and Account Risk Limits?</h2>
 
 <p>Set the stop before calculating the lot size, then set the maximum number of martingale steps before entering the first trade. A practical rule is to define a hard account loss limit, such as 2% or 5%, and reject any sequence whose worst-case loss exceeds that number.</p>
-
+<p>
+  For a deeper explanation of leverage, margin calls, slippage and the risks of oversized
+  forex positions, read our guide to
+  <a href="/blog/risks-of-high-leverage-forex-trading">
+    the risks of high leverage forex trading
+  </a>.
+</p>
 <p>The percentage is a risk policy, not a promise of safety. A $2,000 account with a 5% cycle limit can lose $100. At $10 per unit, even four losses totaling $150 already exceed that limit.</p>
 
 <h3>Use a fixed stop distance</h3>
