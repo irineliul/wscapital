@@ -9,7 +9,7 @@ const usd = (n: number) =>
 const t = {
   en: {
     badge: 'Calculation Example',
-    titlePrefix: 'What would it mean to invest just $150 for a potential x 1000 profit opportunity in 10 weeks? ',
+    titlePrefix: 'What would it mean to invest just $150 for a potential x 1000 profit opportunity in 10 weeks? - ',
     descPrefix: 'The goal is simple and repeatable: ',
     descTarget: '+100% per week',
     descMiddle: '. At the start of every week, recalculate your risk unit (balance divided by ',
@@ -33,8 +33,8 @@ const t = {
   },
   ro: {
     badge: 'Exemplu de calcul',
-    titlePrefix: 'Cum crezi că este să investești doar $150 pentru o oportunitate de profit de x 1000 în 10 săptămâni - ',
-    descPrefix: '? Obiectivul este simplu și repetabil: ',
+    titlePrefix: 'Cum crezi că este să investești doar $150 pentru o oportunitate de profit de x 1000 în 10 săptămâni? - ',
+    descPrefix: 'Obiectivul este simplu și repetabil: ',
     descTarget: '+100% pe săptămână',
     descMiddle: '. La începutul fiecărei săptămâni recalculezi unitatea de risc (soldul împărțit la ',
     descSuffix: ') și rulezi seria Martingale pe 4 niveluri până atingi ținta. Când soldul se dublează, oprești săptămâna și repornești cu noul sold.',
