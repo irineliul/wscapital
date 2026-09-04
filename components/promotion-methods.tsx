@@ -82,14 +82,14 @@ export function PromotionMethods() {
         </div>
 
         <div className="mt-10 grid gap-6 lg:grid-cols-2">
-          <article className="rounded-2xl border border-border bg-card p-6 sm:p-8">
+          <article className="rounded-2xl border border-border bg-card p-5 sm:p-6">
             <div className="flex items-center gap-3">
-              <span className="flex size-9 items-center justify-center rounded-lg bg-primary text-primary-foreground">
+              <span className="flex size-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">
                 <Megaphone className="size-4" aria-hidden="true" />
               </span>
-              <h3 className="text-xl font-semibold">{content.freeTitle}</h3>
+              <h3 className="text-lg font-semibold">{content.freeTitle}</h3>
             </div>
-            <ul className="mt-6 list-disc space-y-3 pl-5 text-muted-foreground leading-relaxed">
+            <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-muted-foreground leading-relaxed">
               {content.freeMethods.map((method) => <li key={method}>{method}</li>)}
             </ul>
             <div className="mt-6">
@@ -100,7 +100,7 @@ export function PromotionMethods() {
           </article>
 
           <article className="overflow-hidden rounded-2xl border border-border bg-card">
-            <div className="grid gap-8 p-6 sm:p-8 lg:grid-cols-[1fr_190px] lg:items-center">
+            <div className="grid gap-5 p-5 sm:p-6 lg:grid-cols-[1fr_160px] lg:items-start">
               <div>
                 <div className="flex items-center gap-3">
                   <span className="flex size-9 items-center justify-center rounded-lg bg-accent text-accent-foreground">
@@ -108,12 +108,12 @@ export function PromotionMethods() {
                   </span>
                   <p className="text-xs font-semibold tracking-widest text-accent-foreground uppercase">{content.qrEyebrow}</p>
                 </div>
-                <h3 className="mt-5 text-2xl font-semibold tracking-tight text-balance">{content.qrTitle}</h3>
-                <p className="mt-4 text-muted-foreground leading-relaxed">{content.qrDesc}</p>
+                <h3 className="mt-4 text-xl font-semibold tracking-tight text-balance sm:text-[1.35rem]">{content.qrTitle}</h3>
+                <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{content.qrDesc}</p>
                 <p className="mt-4 text-sm text-muted-foreground leading-relaxed">{content.qrAudience}</p>
               </div>
 
-              <div className="mx-auto w-full max-w-[190px] rotate-2 rounded-xl bg-primary p-3 text-primary-foreground shadow-xl shadow-primary/20">
+              <div className="mx-auto w-full max-w-[160px] rotate-2 rounded-xl bg-primary p-2.5 text-primary-foreground shadow-xl shadow-primary/20">
                 <div className="rounded-lg border border-primary-foreground/20 p-3">
                   <CreditCard className="size-5" aria-hidden="true" />
                   <p className="mt-8 text-[9px] font-semibold tracking-[0.18em]">WS CAPITAL</p>
@@ -126,7 +126,7 @@ export function PromotionMethods() {
               </div>
             </div>
 
-            <div className="border-t border-border bg-secondary/50 p-6 sm:p-8">
+            <div className="border-t border-border bg-secondary/50 p-5 sm:p-6">
               <div className="grid gap-4 sm:grid-cols-3">
                 {content.qrBenefits.map(([title, description]) => (
                   <div key={title}>
