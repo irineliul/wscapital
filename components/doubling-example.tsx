@@ -9,8 +9,7 @@ const usd = (n: number) =>
 const t = {
   en: {
     badge: 'Calculation Example',
-    titlePrefix: 'Investors double their capital 10 times in a row — from $150 to ',
-    titleSuffix: ' in 10 weeks',
+    titlePrefix: 'What would it mean to invest just $150 for a potential x 1000 profit opportunity in 10 weeks? ',
     descPrefix: 'The goal is simple and repeatable: ',
     descTarget: '+100% per week',
     descMiddle: '. At the start of every week, recalculate your risk unit (balance divided by ',
@@ -34,8 +33,7 @@ const t = {
   },
   ro: {
     badge: 'Exemplu de calcul',
-    titlePrefix: 'Investitorii dublează suma de 10 ori la rând: de la $150 la ',
-    titleSuffix: ' în 10 săptămâni',
+    titlePrefix: 'Cum înțelegi că este să investești doar $150 pentru o oportunitate de profit de x 1000 în 10 săptămâni? ',
     descPrefix: 'Obiectivul este simplu și repetabil: ',
     descTarget: '+100% pe săptămână',
     descMiddle: '. La începutul fiecărei săptămâni recalculezi unitatea de risc (soldul împărțit la ',
