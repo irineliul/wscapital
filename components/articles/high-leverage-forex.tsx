@@ -24,7 +24,13 @@ High leverage doesn’t increase your probability of profit. It increases the si
 Leverage lets you control a larger notional value with less cash. If your broker offers 100:1 leverage, $1,000 of margin can support a position worth $100,000. A 0.50% move against that position creates a $500 loss before trading costs, which equals half of the account in this example.
 
 The broker’s maximum leverage is a limit, not a target. **Available leverage is not a sensible position size.** A trader with 30:1 leverage can still take a position that is too large, while a trader with 100:1 leverage can trade a smaller position and keep more unused margin.
-
+<p>
+  For a detailed breakdown of the 1-2-4-8 system, cumulative losses and position sizing,
+  see our guide to the{' '}
+  <a href="/blog/martingale-forex-strategy-1-2-4-8-risk-management">
+    Martingale Forex Strategy: 1-2-4-8 Risk Management
+  </a>.
+</p>
 > Margin is the money set aside to support an open position; it is not a deposit against a guaranteed loss.
 
 Your used margin rises as your position grows. Your free margin is what remains available for losses and new trades. When losses reduce your equity, the account’s margin level falls even if the currency pair has not moved far in percentage terms.
@@ -94,8 +100,26 @@ Trading costs are part of the strategy, not an afterthought.
 ## Martingale Recovery Can Compound Losses Faster Than You Can Fund Them
 
 Martingale money management increases position size after a losing trade in an attempt to recover prior losses.
-
-A four-level sequence using 1, 2, 4, and 8 units requires 15 total units if all four trades lose. The final trade is eight times the initial size, while the account has already absorbed the earlier losses.
+<p>
+  For a detailed breakdown of the 1-2-4-8 system, cumulative losses and position sizing,
+  see our guide to the{' '}
+  <a href="/blog/martingale-forex-strategy-1-2-4-8-risk-management">
+    Martingale Forex Strategy: 1-2-4-8 Risk Management
+  </a>.
+</p>
+A four-level sequence using 1, 2, 4, and 8 units requires 15 total units if all four trades lose. <p>
+  For a detailed breakdown of the 1-2-4-8 system, cumulative losses and position sizing,
+  see our guide to the{' '}
+  <a href="/blog/martingale-forex-strategy-1-2-4-8-risk-management">
+    Martingale Forex Strategy: 1-2-4-8 Risk Management
+  </a>.
+</p><p>
+  For a detailed breakdown of the 1-2-4-8 system, cumulative losses and position sizing,
+  see our guide to the{' '}
+  <a href="/blog/martingale-forex-strategy-1-2-4-8-risk-management">
+    Martingale Forex Strategy: 1-2-4-8 Risk Management
+  </a>.
+</p> The final trade is eight times the initial size, while the account has already  absorbed the earlier losses.
 
 ### The Arithmetic Becomes Aggressive
 
