@@ -21,7 +21,7 @@ export async function generateMetadata({
   const { data: post } = await supabase
     .from('blog_posts')
     .select(
-      'title, meta_title, meta_description, featured_image, slug'
+      'title, meta_title, meta_description, featured_image, slug, published_at, created_at'
     )
     .eq('slug', slug)
     .eq('published', true)
@@ -30,6 +30,10 @@ export async function generateMetadata({
   if (!post) {
     return {
       title: 'Article Not Found | WS Capital',
+      robots: {
+        index: false,
+        follow: false,
+      },
     }
   }
 
@@ -41,6 +45,8 @@ export async function generateMetadata({
 
   const canonicalUrl =
     'https://wscapital.app/blog/' + post.slug
+
+  const publishedTime = post.published_at || post.created_at
 
   return {
     title,
@@ -54,7 +60,12 @@ export async function generateMetadata({
       title,
       description,
       url: canonicalUrl,
+      siteName: 'WS Capital',
       type: 'article',
+
+      ...(publishedTime && {
+        publishedTime,
+      }),
 
       ...(post.featured_image && {
         images: [
@@ -74,6 +85,18 @@ export async function generateMetadata({
       ...(post.featured_image && {
         images: [post.featured_image],
       }),
+    },
+
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+        'max-video-preview': -1,
+      },
     },
   }
 }
@@ -98,8 +121,46 @@ export default async function BlogArticlePage({
 
   const date = post.published_at || post.created_at
 
+  const canonicalUrl =
+    'https://wscapital.app/blog/' + post.slug
+
+  const description =
+    post.meta_description ||
+    'Forex trading insights, risk management, leverage and trading strategies from WS Capital.'
+
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: post.title,
+    description,
+    url: canonicalUrl,
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': canonicalUrl,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'WS Capital',
+      url: 'https://wscapital.app',
+    },
+    ...(date && {
+      datePublished: date,
+      dateModified: date,
+    }),
+    ...(post.featured_image && {
+      image: [post.featured_image],
+    }),
+  }
+
   return (
     <main className="min-h-screen bg-background">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd),
+        }}
+      />
+
       <article className="mx-auto max-w-4xl px-4 py-12">
         {post.featured_image && (
           <div className="relative mb-8 aspect-video w-full overflow-hidden rounded-xl">
