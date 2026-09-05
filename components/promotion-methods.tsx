@@ -19,7 +19,7 @@ const t = {
     ],
     qrEyebrow: 'Offline growth kit',
     qrTitle: 'The QR code that brings added profit opportunities to your business, employees, clients, and visitors',
-    qrDesc: 'What do you think it's like to invest just $150 for a 1000x profit opportunity in 10 weeks? You receive the AI-created Trading Robot free by email. All you have to do is display your QR code — on a business card, poster, banner, or directly on your phone screen — giving your clients, employees, and visitors instant access to this technology. Every scan becomes a real financial opportunity for them and a continuous source of passive income for you.',
+    qrDesc: 'What do you imagine investing just $150 for a 1000x profit opportunity in 10 weeks feels like? You receive the AI-created Trading Robot free by email. All you have to do is display your QR code — on a business card, poster, banner, or directly on your phone screen — giving your clients, employees, and visitors instant access to this technology. Every scan becomes a real financial opportunity for them and a continuous source of passive income for you.',
     qrAudience: 'Ideal for fitness studios, gyms, sports clubs, wellness centers, business owners, factory managers, and partners in hotels, malls, stores, travel agencies, waiting rooms, and service hubs.',
     qrBenefits: [
       ['ZERO setup costs', 'Print-ready QR code templates, prepared for immediate use.'],
