@@ -33,7 +33,7 @@ const t = {
   },
   ro: {
     badge: 'Exemplu de calcul',
-    titlePrefix: 'Cum crezi că este să investești doar $150 pentru o oportunitate de profit de x 1000 în 10 săptămâni? - ',
+    titlePrefix: 'Cum crezi că este să investești doar $150 pentru o oportunitate de profit de 1000x în 10 săptămâni? - ',
     descPrefix: 'Obiectivul este simplu și repetabil: ',
     descTarget: '+100% pe săptămână',
     descMiddle: '. La începutul fiecărei săptămâni recalculezi unitatea de risc (soldul împărțit la ',
