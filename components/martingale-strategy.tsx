@@ -48,7 +48,7 @@ const t = {
   },
   ro: {
     badge: 'Managementul banilor',
-    title: 'Strategia de Martingal pe 4 niveluri, cu depozitul împărțit la 15',
+    title: 'Strategia de Martingale pe 4 niveluri, cu depozitul împărțit la 15',
     desc: `Depozitul este împărțit de fiecare dată la ${RISK_UNITS} unități egale. Cele 4 niveluri folosesc 1, 2, 4 și 8 unități, iar suma lor este exact ${RISK_UNITS} — deci seria completă nu depășește niciodată depozitul alocat. Capitalul fiecărui nivel este folosit drept marjă, iar leverage-ul de 1:${LEVERAGE} determină volumul de loturi deschis.`,
     calcTitle: 'Calculator de niveluri',
     depositLabel: 'Depozit',
