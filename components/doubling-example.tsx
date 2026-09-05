@@ -9,7 +9,7 @@ const usd = (n: number) =>
 const t = {
   en: {
     badge: 'Calculation Example',
-    titlePrefix: 'What would it mean to invest just $150 for a potential x 1000 profit opportunity in 10 weeks? - ',
+    titlePrefix: 'What do you imagine investing just $150 for a 1000x profit opportunity in 10 weeks feels like? - ',
     descPrefix: 'The goal is simple and repeatable: ',
     descTarget: '+100% per week',
     descMiddle: '. At the start of every week, recalculate your risk unit (balance divided by ',
