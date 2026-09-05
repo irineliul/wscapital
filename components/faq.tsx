@@ -38,7 +38,7 @@ const t = {
       },
       {
         q: 'How do I promote my affiliate link?',
-        a: 'You can promote for free via Facebook groups, Instagram stories, WhatsApp, Telegram and online communities. Paid promotion is allowed on Facebook Ads, Instagram Business, YouTube, TikTok Business and X. Your personalized link format is: wscapital.app/?affiliate=YOUR_ID',
+        a: 'You can promote your affiliate link for free on Facebook pages and groups, Instagram stories, WhatsApp groups, Telegram channels and relevant online communities. Create helpful posts, short videos or educational content that include your link. You can also use a QR code on personalized business cards, posters, banners or your phone screen, especially in fitness studios, gyms, sports clubs, wellness centers, hotels, stores and other high-traffic locations. Partner with fitness coaches, sports clubs and social media influencers to introduce the QR code and affiliate opportunity to their audiences. Paid promotion is allowed on Facebook Ads, Instagram Business, YouTube, TikTok Business and X. Your personalized link format is: wscapital.app/?affiliate=YOUR_ID',
       },
     ],
   },
@@ -76,7 +76,7 @@ const t = {
 },
       {
         q: 'Cum îmi promovez linkul de afiliat?',
-        a: 'Poți promova gratuit prin grupuri Facebook, story-uri Instagram, WhatsApp, Telegram și comunități online. Promovarea plătită este permisă pe Facebook Ads, Instagram Business, YouTube, TikTok Business și X. Formatul linkului tău personalizat este: wscapital.app/?affiliate=ID_TĂU',
+        a: 'Îți poți promova gratuit linkul de afiliat pe pagini și grupuri Facebook, story-uri Instagram, grupuri WhatsApp, canale Telegram și comunități online relevante. Creează postări utile, videoclipuri scurte sau conținut educațional care includ linkul tău. Poți folosi și un cod QR pe cărți de vizită personalizate, postere, bannere sau pe ecranul telefonului, mai ales în săli de fitness, săli de sport, cluburi sportive, centre wellness, hoteluri, magazine și alte locații cu trafic ridicat. Colaborează cu antrenori de fitness, cluburi sportive și influenceri din social media pentru a prezenta codul QR și oportunitatea de afiliere publicului lor. Promovarea plătită este permisă pe Facebook Ads, Instagram Business, YouTube, TikTok Business și X. Formatul linkului tău personalizat este: wscapital.app/?affiliate=ID_TĂU',
       },
     ],
   },
