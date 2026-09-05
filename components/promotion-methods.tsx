@@ -44,7 +44,7 @@ const t = {
     ],
     qrEyebrow: 'Kit de promovare offline',
     qrTitle: 'Codul QR care aduce o oportunitate de profit adăugat afacerii tale, angajaților, clienților și vizitatorilor',
-    qrDesc: 'Cum crezi că este să investești doar $150 pentru o oportunitate de profit de x1000 în 10 săptămâni? Primești Gratuit Robot de tranzacționare creat de AI pe e-mail. Tot ce trebuie să faci este să arăți codul tău QR — pe o carte de vizită, pe un poster, banner sau direct pe ecranul telefonului tău, oferind clienților, angajaților și vizitatorilor tăi acces instant la această tehnologie, iar fiecare scanare devine o oportunitate financiară reală pentru ei și o sursă continuă de venit pasiv pentru tine.',
+    qrDesc: 'Cum crezi că este să investești doar $150 pentru o oportunitate de profit de 1000x în 10 săptămâni? Primești Gratuit Robot de tranzacționare creat de AI pe e-mail. Tot ce trebuie să faci este să arăți codul tău QR — pe o carte de vizită, pe un poster, banner sau direct pe ecranul telefonului tău, oferind clienților, angajaților și vizitatorilor tăi acces instant la această tehnologie, iar fiecare scanare devine o oportunitate financiară reală pentru ei și o sursă continuă de venit pasiv pentru tine.',
     qrAudience: 'Ideal pentru săli de fitness, săli de sport, cluburi sportive, centre de wellness, proprietari de afaceri, manageri în fabrici și parteneri din hoteluri, mall-uri, magazine, agenții de voiaj, săli de așteptare și hub-uri de servicii.',
     qrBenefits: [
       ['Costuri ZERO de configurare', 'Șabloane de coduri QR pregătite direct pentru tipar.'],
