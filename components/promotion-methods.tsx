@@ -13,13 +13,14 @@ const t = {
     freeTitle: 'Free promotion',
     freeMethods: [
       'Share your affiliate link with your ID on Facebook pages, Instagram stories, WhatsApp groups, Telegram channels, and relevant online communities.',
+      'Work with social media influencers who can introduce the QR code and affiliate opportunity to their audience.',
       'Recommend WS Capital directly to friends, colleagues, or people interested in brokerage and trading.',
       'Create helpful educational content, short videos, or posts and include your affiliate link.',
     ],
     qrEyebrow: 'Offline growth kit',
     qrTitle: 'The QR code that brings added profit opportunities to your business, employees, clients, and visitors',
     qrDesc: 'What would it mean to invest just $150 for a potential x1000 profit opportunity in 10 weeks? You receive the AI-created Trading Robot free by email. All you have to do is display your QR code — on a business card, poster, banner, or directly on your phone screen — giving your clients, employees, and visitors instant access to this technology. Every scan becomes a real financial opportunity for them and a continuous source of passive income for you.',
-    qrAudience: 'Built for business owners, factory managers, and partners in hotels, malls, stores, travel agencies, waiting rooms, and service hubs.',
+    qrAudience: 'Ideal for fitness studios, gyms, sports clubs, wellness centers, business owners, factory managers, and partners in hotels, malls, stores, travel agencies, waiting rooms, and service hubs.',
     qrBenefits: [
       ['ZERO setup costs', 'Print-ready QR code templates, prepared for immediate use.'],
       ['Extra passive income', 'Earn commissions from every client or employee who scans and becomes an active investor.'],
@@ -40,13 +41,14 @@ const t = {
     freeTitle: 'Promovare gratuită',
     freeMethods: [
       'Distribuie link-ul tău de afiliat cu ID-ul tău pe pagini de Facebook, story-uri pe Instagram, grupuri WhatsApp, canale Telegram și comunități online relevante.',
+      'Colaborează cu influenceri din social media care pot prezenta codul QR și oportunitatea de afiliere publicului lor.',
       'Recomandă WS Capital direct prietenilor, colegilor sau persoanelor interesate de brokeraj și tranzacționare.',
       'Creează conținut educațional util, videoclipuri scurte sau postări și include link-ul tău de afiliat.',
     ],
     qrEyebrow: 'Kit de promovare offline',
     qrTitle: 'Codul QR care aduce o oportunitate de profit adăugat afacerii tale, angajaților, clienților și vizitatorilor',
     qrDesc: 'Cum înțelegi că este să investești doar $150 pentru o oportunitate de profit de x1000 în 10 săptămâni? Primești Gratuit Robot de tranzacționare creat de AI pe e-mail. Tot ce trebuie să faci este să arăți codul tău QR — pe o carte de vizită, pe un poster, banner sau direct pe ecranul telefonului tău, oferind clienților, angajaților și vizitatorilor tăi acces instant la această tehnologie, iar fiecare scanare devine o oportunitate financiară reală pentru ei și o sursă continuă de venit pasiv pentru tine.',
-    qrAudience: 'Ideal pentru proprietari de afaceri, manageri în fabrici și parteneri din hoteluri, mall-uri, magazine, agenții de voiaj, săli de așteptare și hub-uri de servicii.',
+    qrAudience: 'Ideal pentru săli de fitness, săli de sport, cluburi sportive, centre de wellness, proprietari de afaceri, manageri în fabrici și parteneri din hoteluri, mall-uri, magazine, agenții de voiaj, săli de așteptare și hub-uri de servicii.',
     qrBenefits: [
       ['Costuri ZERO de configurare', 'Șabloane de coduri QR pregătite direct pentru tipar.'],
       ['Venit pasiv suplimentar', 'Generează comisioane de la fiecare client sau angajat care scanează și devine investitor activ.'],
