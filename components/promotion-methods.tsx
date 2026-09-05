@@ -3,9 +3,6 @@
 import { useEffect, useState } from 'react'
 import { ArrowUpRight, CreditCard, Megaphone, QrCode } from 'lucide-react'
 
-const qrTarget = 'http://wscapital.ws'
-const qrImage = `https://quickchart.io/qr?text=${encodeURIComponent(qrTarget)}&size=720&margin=2`
-
 const t = {
   en: {
     badge: 'Promotion Methods',
@@ -67,12 +64,15 @@ const t = {
 
 export function PromotionMethods() {
   const [lang, setLang] = useState<'en' | 'ro'>('en')
+  const [qrTarget, setQrTarget] = useState('http://wscapital.ws')
 
   useEffect(() => {
     const saved = window.localStorage.getItem('site-language')
     if (saved === 'ro') setLang('ro')
+    setQrTarget(window.location.href)
   }, [])
 
+  const qrImage = `https://quickchart.io/qr?text=${encodeURIComponent(qrTarget)}&size=720&margin=2`
   const content = t[lang]
 
   return (
@@ -120,7 +120,7 @@ export function PromotionMethods() {
                   <CreditCard className="size-5" aria-hidden="true" />
                   <p className="mt-8 text-[9px] font-semibold tracking-[0.18em]">WS CAPITAL</p>
                   <div className="mt-3 rounded-md bg-card p-2">
-                    <img src={qrImage} alt="QR code linking to wscapital.ws" className="aspect-square w-full" />
+                    <img src={qrImage} alt={`QR code linking to ${qrTarget}`} className="aspect-square w-full" />
                   </div>
                   <p className="mt-3 text-[8px] font-semibold tracking-wider">{content.qrCardLabel}</p>
                   <p className="mt-1 text-[8px] text-primary-foreground/70">{content.qrCardSub}</p>
