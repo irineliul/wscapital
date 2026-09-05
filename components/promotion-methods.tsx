@@ -19,7 +19,7 @@ const t = {
     ],
     qrEyebrow: 'Offline growth kit',
     qrTitle: 'The QR code that brings added profit opportunities to your business, employees, clients, and visitors',
-    qrDesc: 'What would it mean to invest just $150 for a potential x1000 profit opportunity in 10 weeks? You receive the AI-created Trading Robot free by email. All you have to do is display your QR code — on a business card, poster, banner, or directly on your phone screen — giving your clients, employees, and visitors instant access to this technology. Every scan becomes a real financial opportunity for them and a continuous source of passive income for you.',
+    qrDesc: 'What do you think it's like to invest just $150 for a 1000x profit opportunity in 10 weeks? You receive the AI-created Trading Robot free by email. All you have to do is display your QR code — on a business card, poster, banner, or directly on your phone screen — giving your clients, employees, and visitors instant access to this technology. Every scan becomes a real financial opportunity for them and a continuous source of passive income for you.',
     qrAudience: 'Ideal for fitness studios, gyms, sports clubs, wellness centers, business owners, factory managers, and partners in hotels, malls, stores, travel agencies, waiting rooms, and service hubs.',
     qrBenefits: [
       ['ZERO setup costs', 'Print-ready QR code templates, prepared for immediate use.'],
@@ -47,7 +47,7 @@ const t = {
     ],
     qrEyebrow: 'Kit de promovare offline',
     qrTitle: 'Codul QR care aduce o oportunitate de profit adăugat afacerii tale, angajaților, clienților și vizitatorilor',
-    qrDesc: 'Cum înțelegi că este să investești doar $150 pentru o oportunitate de profit de x1000 în 10 săptămâni? Primești Gratuit Robot de tranzacționare creat de AI pe e-mail. Tot ce trebuie să faci este să arăți codul tău QR — pe o carte de vizită, pe un poster, banner sau direct pe ecranul telefonului tău, oferind clienților, angajaților și vizitatorilor tăi acces instant la această tehnologie, iar fiecare scanare devine o oportunitate financiară reală pentru ei și o sursă continuă de venit pasiv pentru tine.',
+    qrDesc: 'Cum crezi că este să investești doar $150 pentru o oportunitate de profit de x1000 în 10 săptămâni? Primești Gratuit Robot de tranzacționare creat de AI pe e-mail. Tot ce trebuie să faci este să arăți codul tău QR — pe o carte de vizită, pe un poster, banner sau direct pe ecranul telefonului tău, oferind clienților, angajaților și vizitatorilor tăi acces instant la această tehnologie, iar fiecare scanare devine o oportunitate financiară reală pentru ei și o sursă continuă de venit pasiv pentru tine.',
     qrAudience: 'Ideal pentru săli de fitness, săli de sport, cluburi sportive, centre de wellness, proprietari de afaceri, manageri în fabrici și parteneri din hoteluri, mall-uri, magazine, agenții de voiaj, săli de așteptare și hub-uri de servicii.',
     qrBenefits: [
       ['Costuri ZERO de configurare', 'Șabloane de coduri QR pregătite direct pentru tipar.'],
