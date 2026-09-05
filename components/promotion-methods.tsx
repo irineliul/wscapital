@@ -69,7 +69,9 @@ export function PromotionMethods() {
   useEffect(() => {
     const saved = window.localStorage.getItem('site-language')
     if (saved === 'ro') setLang('ro')
-    setQrTarget(window.location.href)
+    const homepageUrl = new URL('/', window.location.origin)
+    homepageUrl.search = window.location.search
+    setQrTarget(homepageUrl.toString())
   }, [])
 
   const qrImage = `https://quickchart.io/qr?text=${encodeURIComponent(qrTarget)}&size=720&margin=2`
