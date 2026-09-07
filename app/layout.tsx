@@ -1,4 +1,5 @@
 import { Analytics } from '@vercel/analytics/next'
+import { headers } from 'next/headers'
 import type { Metadata, Viewport } from 'next'
 import { JetBrains_Mono, Manrope, Playfair_Display } from 'next/font/google'
 import './globals.css'
@@ -65,14 +66,25 @@ export const viewport: Viewport = {
   themeColor: '#8caf91',
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const country = (await headers()).get('x-vercel-ip-country')
+  const isRomanianVisitor = country?.toUpperCase() === 'RO'
+
   return (
-    <html lang="en" className="light bg-background">
+    <html lang={isRomanianVisitor ? 'ro' : 'en'} className="light bg-background">
       <body className="font-sans antialiased">
+        {isRomanianVisitor && (
+          <script
+            dangerouslySetInnerHTML={{
+              __html:
+                "if (!localStorage.getItem('site-language')) localStorage.setItem('site-language','ro')",
+            }}
+          />
+        )}
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
