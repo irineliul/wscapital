@@ -2,6 +2,7 @@ import { Analytics } from '@vercel/analytics/next'
 import { headers } from 'next/headers'
 import type { Metadata, Viewport } from 'next'
 import { JetBrains_Mono, Manrope, Playfair_Display } from 'next/font/google'
+import { WolfSnakeChat } from '@/components/wolfsnake-chat'
 import './globals.css'
 
 const _manrope = Manrope({ subsets: ['latin'] })
@@ -86,6 +87,7 @@ export default async function RootLayout({
           />
         )}
         {children}
+        <WolfSnakeChat />
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>
