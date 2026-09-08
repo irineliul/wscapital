@@ -24,13 +24,6 @@ export function WolfSnakeChat() {
   const inputRef = useRef<HTMLInputElement>(null)
 
   useEffect(() => {
-    if (!window.localStorage.getItem('wolfsnake-seen')) {
-      setOpen(true)
-      window.localStorage.setItem('wolfsnake-seen', 'true')
-    }
-  }, [])
-
-  useEffect(() => {
     if (open) inputRef.current?.focus()
   }, [open])
 
