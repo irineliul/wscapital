@@ -3,6 +3,8 @@
 import { FormEvent, useEffect, useRef, useState } from 'react'
 import { MessageCircle, Send, X } from 'lucide-react'
 
+const whatsappGroupUrl = 'https://chat.whatsapp.com/Ltb2Fhx9dXL5VJCI0oexED'
+
 type ChatMessage = {
   role: 'user' | 'assistant'
   content: string
@@ -129,14 +131,25 @@ export function WolfSnakeChat() {
       )}
 
       {!open && (
-        <button
-          type="button"
-          onClick={() => setOpen(true)}
-          aria-label="Open WolfSnake chat"
-          className="flex size-14 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-lg shadow-primary/25 transition-transform hover:scale-105"
-        >
-          <MessageCircle className="size-6" aria-hidden="true" />
-        </button>
+        <div className="flex items-center gap-3">
+          <a
+            href={whatsappGroupUrl}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Join the WS Capital WhatsApp group"
+            className="flex size-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg shadow-[#25D366]/25 transition-transform hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+          >
+            <MessageCircle className="size-6" aria-hidden="true" />
+          </a>
+          <button
+            type="button"
+            onClick={() => setOpen(true)}
+            aria-label="Open WolfSnake chat"
+            className="flex size-14 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-lg shadow-primary/25 transition-transform hover:scale-105"
+          >
+            <MessageCircle className="size-6" aria-hidden="true" />
+          </button>
+        </div>
       )}
     </div>
   )
