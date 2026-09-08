@@ -9,6 +9,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@ai-sdk/google": "^4.0.64",
     "@ai-sdk/react": "^4.0.96",
     "@base-ui/react": "^1.5.0",
     "@supabase/ssr": "^0.12.4",
