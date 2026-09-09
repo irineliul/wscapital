@@ -29,7 +29,7 @@ const t = {
       {
         icon: Code2,
         title: 'Pine Editor Script',
-        text: 'Copy the script into Pine Editor, add it to your 1 min chart, and receive entry signals with automated SL/TP.',
+        text: 'You copy the script into Pine Editor, add it to the chart and receive signals, then manually set the SL/TP.',
         tag: 'Signals',
       },
       {
@@ -71,7 +71,7 @@ const t = {
       {
         icon: Code2,
         title: 'Script pentru Pine Editor',
-        text: 'Copiezi scriptul în Pine Editor, îl adaugi pe grafic și primești semnale cu SL/TP.',
+        text: 'Copiezi scriptul în Pine Editor, îl adaugi pe grafic și primești semnale, fixezi manual SL/TP.',
         tag: 'Semnale',
       },
       {
