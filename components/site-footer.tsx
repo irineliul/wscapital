@@ -45,7 +45,7 @@ export function SiteFooter() {
               { href: '#comisioane', ro: 'Comisioane pe țări', en: 'Country commissions' },
               { href: '#promovare', ro: 'Metode de promovare', en: 'Promotion methods' },
               { href: '#exemplu', ro: 'Exemplu de calcul', en: 'Calculation example' },
-              { href: '#strategie', ro: 'Strategie martingal', en: 'Martingale strategy' },     
+              { href: '#strategie', ro: 'Strategia Martingale', en: 'Martingale strategy' },     
               { href: '#instrumente', ro: 'Instrumente incluse', en: 'Included tools' },
               { href: '#inregistrare', ro: 'Înregistrare', en: 'Registration' },
             ].map((l) => (
