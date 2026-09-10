@@ -19,13 +19,23 @@ export default function PublishBestTradingAffiliatePage() {
       const data = await response.json()
 
       if (!response.ok) {
-        setStatus(`Error: ${data.error}`)
+        setStatus(
+          `Publishing failed: ${
+            data.error || "Unknown error"
+          }`
+        )
         return
       }
 
-      setStatus("Article published successfully!")
+      setStatus(
+        "Article published successfully!"
+      )
     } catch (error) {
-      setStatus("Publishing failed.")
+      setStatus(
+        error instanceof Error
+          ? `Publishing failed: ${error.message}`
+          : "Publishing failed: Unknown error"
+      )
     }
   }
 
