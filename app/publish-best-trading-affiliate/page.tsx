@@ -1,5 +1,3 @@
-"use server"
-
 import { createClient } from "@supabase/supabase-js"
 import { revalidatePath } from "next/cache"
 import { bestTradingAffiliateProgramArticle } from "@/components/articles/best-trading-affiliate-program"
@@ -19,7 +17,7 @@ export default function PublishBestTradingAffiliatePage() {
         <form action={publishArticle}>
           <button
             type="submit"
-            className="rounded-lg bg-primary px-6 py-3 font-semibold text-primary-foreground cursor-pointer"
+            className="rounded-lg bg-primary px-6 py-3 font-semibold text-primary-foreground"
           >
             Publish Article
           </button>
@@ -30,6 +28,8 @@ export default function PublishBestTradingAffiliatePage() {
 }
 
 async function publishArticle() {
+  "use server"
+
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
   const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY
 
@@ -44,6 +44,16 @@ async function publishArticle() {
 
   const article = bestTradingAffiliateProgramArticle
 
+  const metaTitle =
+    "Best Trading Affiliate Program | WS Capital Commissions & Country Rates"
+
+  const metaDescription =
+    "Learn how the WS Capital trading affiliate program works, including country-based commissions, qualified investors, tracking, payouts, leverage and trading risk."
+
+  const publishedAt = new Date(
+    `${article.date}T12:00:00.000Z`
+  ).toISOString()
+
   const { error } = await supabase
     .from("blog_posts")
     .upsert(
@@ -51,16 +61,12 @@ async function publishArticle() {
         title: article.title,
         slug: article.slug,
         content: article.content,
-        meta_title:
-          "Best Trading Affiliate Program | WS Capital Commissions & Country Rates",
-        meta_description:
-          "Learn how the WS Capital trading affiliate program works, including country-based commissions, qualified investors, tracking, payouts, leverage and trading risk.",
+        meta_title: metaTitle,
+        meta_description: metaDescription,
         featured_image:
           "https://pub-8504ee5dfbcc44ec838bbc73f281521e.r2.dev/blog-images/openai/9007/openai-1789062173007-ix1wf0-1789062173015-n3w06f.png",
         published: true,
-        published_at: new Date(
-          `${article.date}T12:00:00.000Z`
-        ).toISOString(),
+        published_at: publishedAt,
       },
       {
         onConflict: "slug",
