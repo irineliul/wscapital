@@ -173,6 +173,14 @@ Use the platform’s smallest practical copy allocation, cap the maximum open ex
 
 Do not let copied trades combine with your own trades on the same pair without checking total exposure. A copied EUR/USD position and a manually opened EUR/USD position are one combined risk from your account’s point of view.
 
+<p>
+  If you are also interested in the business side of forex and brokerage
+  marketing, read our guide to the{' '}
+  <a href="/blog/best-trading-affiliate-program">
+    Best Trading Affiliate Program
+  </a>.
+</p>
+
 ## Broker and Counterparty Risk Can Override Your Trading Plan
 
 Forex trading depends on a broker, its liquidity providers, its technology, and the rules governing customer funds.

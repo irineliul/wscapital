@@ -322,6 +322,14 @@ A stop order is an instruction to exit, not a guarantee of the exact execution p
 
 <p>A single attractive month is not enough evidence. Require a rule set that remains acceptable after costs and adverse sequencing, or use fixed-risk sizing instead.</p>
 
+<p>
+  If you are also interested in the business side of forex trading and
+  brokerage partnerships, read our guide to the{' '}
+  <a href="/blog/best-trading-affiliate-program">
+    Best Trading Affiliate Program
+  </a>.
+</p>
+
 <h2>Conclusion</h2>
 
 <p>Use the 1-2-4-8 sequence only as a capped experiment with a tested entry signal, fixed stops, and a written loss limit. If four losses would exceed your account’s allowed drawdown, reject the system before placing the first trade. For most beginners, fixed-risk sizing is the better choice because it keeps the next trade from becoming the largest decision in the account.</p>
