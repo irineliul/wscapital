@@ -2,11 +2,6 @@ import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { createClient } from '@supabase/supabase-js'
 
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-)
-
 type PageProps = {
   params: Promise<{
     slug: string
@@ -17,7 +12,17 @@ export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
   const { slug } = await params
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
+  const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
 
+  if (!supabaseUrl || !supabaseAnonKey) {
+    return {
+      title: 'Article Not Found | WS Capital',
+      robots: { index: false, follow: false },
+    }
+  }
+
+  const supabase = createClient(supabaseUrl, supabaseAnonKey)
   const { data: post } = await supabase
     .from('blog_posts')
     .select(
@@ -105,7 +110,14 @@ export default async function BlogArticlePage({
   params,
 }: PageProps) {
   const { slug } = await params
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
+  const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
 
+  if (!supabaseUrl || !supabaseAnonKey) {
+    notFound()
+  }
+
+  const supabase = createClient(supabaseUrl, supabaseAnonKey)
   const { data: post, error } = await supabase
     .from('blog_posts')
     .select(

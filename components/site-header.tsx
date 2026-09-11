@@ -42,7 +42,7 @@ export function SiteHeader() {
         <a href="#" className="flex items-center gap-2.5 font-semibold tracking-tight">
           <Image
             src="/images/wsg-dragon.png"
-            alt="WS Capital — Wolf Snake Capital"
+            alt="WS Capital"
             width={44}
             height={44}
             className="size-16 shrink-0 object-contain"
@@ -50,7 +50,6 @@ export function SiteHeader() {
           />
           <span className="text-base">
             <span className="text-primary-foreground">WS</span> <span className="text-accent">Capital</span>
-            <span className="block text-[10px] font-normal tracking-[0.16em] text-primary-foreground/60">Wolf Snake Capital</span>
           </span>
         </a>
 
