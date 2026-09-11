@@ -7,7 +7,7 @@ export const bestTradingAffiliateProgramArticle = {
   date: '2026-09-11',
   category: 'Forex Affiliate Marketing',
   image:
-    'https://pub-xxxxxxxxxxxxxxxx.r2.dev/blog-images/best-trading-affiliate-program.jpg',
+    '',
 
   content: `
 <article>
