@@ -194,10 +194,10 @@ export function RegisterForm() {
                 }
 
                 const affiliateCode = (
-                  new URLSearchParams(window.location.search).get('affiliate')?.trim() || '39778'
+                  new URLSearchParams(window.location.search).get('affiliate')?.trim() || '43449'
                 )
                   .replace(/[^A-Za-z0-9_-]/g, '')
-                  .slice(0, 100) || '39778'
+                  .slice(0, 100) || '43449'
                 const supabase = createClient()
                 const { error: insertError } = await supabase.from('registrations').insert({
                   full_name: fullName,
