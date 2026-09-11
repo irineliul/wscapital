@@ -24,14 +24,13 @@ export function SiteFooter() {
             <div className="flex items-center gap-2.5 font-semibold">
               <Image
                 src="/images/wsg-dragon.png"
-                alt="WS Capital — Wolf Snake Capital"
+                alt="WS Capital"
                 width={44}
                 height={44}
                 className="size-16 shrink-0 object-contain"
               />
               <span className="text-foreground">WS</span> <span className="text-accent">Capital</span>
             </div>
-            <p className="mt-1 text-xs font-medium tracking-[0.16em] text-muted-foreground">Wolf Snake Capital</p>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
               {t(
                 'WS Capital - oferim consultanta si management pentru investitorii in Brokeraj cu leverage de 1:500, tranzactionare cu depozit impartit la 15 unități, robot creat cu AI pentru Pine Script, Copy trading și program de afiliere pe două niveluri.',

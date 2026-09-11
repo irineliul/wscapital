@@ -330,7 +330,7 @@ A stop order is an instruction to exit, not a guarantee of the exact execution p
   </a>.
 </p>
 
-<h2>Conclusion</h2>
+<h2>Conclusion</h2> Wolf Snake Capital
 
 <p>Use the 1-2-4-8 sequence only as a capped experiment with a tested entry signal, fixed stops, and a written loss limit. If four losses would exceed your account’s allowed drawdown, reject the system before placing the first trade. For most beginners, fixed-risk sizing is the better choice because it keeps the next trade from becoming the largest decision in the account.</p>
 
