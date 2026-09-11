@@ -2,11 +2,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { createClient } from '@supabase/supabase-js'
 
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-)
-
 export const metadata = {
   title: 'Forex Trading Blog | WS Capital',
   description:
@@ -14,6 +9,21 @@ export const metadata = {
 }
 
 export default async function BlogPage() {
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
+  const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+
+  if (!supabaseUrl || !supabaseAnonKey) {
+    return (
+      <main className="min-h-screen bg-background px-4 py-16">
+        <div className="mx-auto max-w-6xl">
+          <h1 className="text-3xl font-bold">WS Capital Blog</h1>
+          <p className="mt-4 text-muted-foreground">Unable to load articles at the moment.</p>
+        </div>
+      </main>
+    )
+  }
+
+  const supabase = createClient(supabaseUrl, supabaseAnonKey)
   const { data: posts, error } = await supabase
     .from('blog_posts')
     .select(
