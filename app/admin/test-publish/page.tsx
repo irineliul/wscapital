@@ -1,77 +1,70 @@
-'use client'
+import { createClient } from '@supabase/supabase-js'
+import { redirect } from 'next/navigation'
+import { bestTradingAffiliateProgramArticle } from '@/components/articles/best-trading-affiliate-program'
 
-import { useState } from 'react'
+async function publishBestTradingAffiliate() {
+  'use server'
 
-export default function TestPublishPage() {
-  const [message, setMessage] = useState('')
-  const [loading, setLoading] = useState(false)
+  const supabase = createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.SUPABASE_SERVICE_ROLE_KEY!
+  )
 
-  async function publishArticle() {
-    setLoading(true)
-    setMessage('Publishing...')
+  const article = bestTradingAffiliateProgramArticle
 
-    try {
-      const response = await fetch('/webhook', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          slug: 'best-trading-affiliate-program',
-          title:
-            'Best Trading Affiliate Program: WS Capital Commissions, Country Rates and Qualified Investors',
-          meta_title:
-            'Best Trading Affiliate Program | WS Capital Commissions & Country Rates',
-          meta_description:
-            'Compare the best trading affiliate program factors and learn how WS Capital commissions, country rates, qualified investors and sub-affiliate earnings work.',
-          published: true,
-        }),
-      })
-
-      const data = await response.json()
-
-      if (!response.ok) {
-        throw new Error(data?.error || 'Publishing failed')
+  const { error } = await supabase
+    .from('blog_posts')
+    .upsert(
+      {
+        title: article.title,
+        slug: article.slug,
+        content: article.content,
+        meta_title: article.seo?.metaTitle ?? null,
+        meta_description: article.seo?.metaDescription ?? article.description ?? null,
+        featured_image: article.image || null,
+        published: true,
+        published_at: article.date
+          ? new Date(article.date).toISOString()
+          : new Date().toISOString(),
+      },
+      {
+        onConflict: 'slug',
       }
+    )
 
-      setMessage(
-        `Article published successfully! ID: ${data.id || 'saved'}`
-      )
-    } catch (error) {
-      setMessage(
-        error instanceof Error
-          ? error.message
-          : 'Something went wrong.'
-      )
-    } finally {
-      setLoading(false)
-    }
+  if (error) {
+    throw new Error(`Supabase error: ${error.message}`)
   }
 
+  redirect(`/blog/${article.slug}`)
+}
+
+export default function TestPublishPage() {
   return (
-    <main className="min-h-screen bg-background px-4 py-16">
-      <div className="mx-auto max-w-2xl">
-        <h1 className="text-3xl font-bold">
-          WS Capital Article Publisher
+    <main className="min-h-screen bg-white p-8">
+      <div className="mx-auto max-w-3xl">
+        <h1 className="mb-8 text-3xl font-bold">
+          WSCapital Article Publishing
         </h1>
 
-        <p className="mt-3 text-muted-foreground">
-          Publish the Best Trading Affiliate Program article to Supabase.
-        </p>
+        <div className="rounded-xl border p-6">
+          <h2 className="mb-2 text-xl font-semibold">
+            Best Trading Affiliate Program
+          </h2>
 
-        <button
-          onClick={publishArticle}
-          disabled={loading}
-          className="mt-8 rounded-lg bg-primary px-6 py-3 font-semibold text-primary-foreground disabled:opacity-50"
-        >
-          {loading ? 'Publishing...' : 'Publish Article'}
-        </button>
-
-        {message && (
-          <p className="mt-6 rounded-lg border border-border p-4">
-            {message}
+          <p className="mb-6 text-gray-600">
+            Publish the article directly to Supabase → blog_posts.
           </p>
-        )}
+
+          <form action={publishBestTradingAffiliate}>
+            <button
+              type="submit"
+              className="rounded-lg bg-black px-6 py-3 font-semibold text-white hover:opacity-90"
+            >
+              Publish Best Trading Affiliate Program
+            </button>
+          </form>
+        </div>
       </div>
     </main>
   )
