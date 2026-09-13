@@ -30,7 +30,7 @@ export async function POST(request: Request) {
     }
 
     const result = streamText({
-      model: google('gemini-3.6-flash'),
+      model: google('gemini-2.5-flash'),
       system: systemPrompt,
       messages,
       maxOutputTokens: 500,
