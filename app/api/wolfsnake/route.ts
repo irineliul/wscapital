@@ -1,5 +1,4 @@
-import { google } from '@ai-sdk/google'
-import { streamText } from 'ai'
+import { gateway, streamText } from 'ai'
 import { NextResponse } from 'next/server'
 
 const systemPrompt = `You are WolfSnake, the official website assistant for WS Capital.
@@ -30,7 +29,7 @@ export async function POST(request: Request) {
     }
 
     const result = streamText({
-      model: google('gemini-3.6-flash'),
+      model: gateway('google/gemini-2.5-flash'),
       system: systemPrompt,
       messages,
       maxOutputTokens: 500,
