@@ -33,7 +33,7 @@ export function SiteFooter() {
             </div>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
               {t(
-                'WS Capital - oferim consultanta si management pentru investitorii in Brokeraj cu leverage de 1:500, tranzactionare cu depozit impartit la 15 unități, robot creat cu AI pentru Pine Script, Copy trading și program de afiliere pe două niveluri.',
+                'WS Capital - oferim consultanta si management pentru investitorii in Brokeraj cu leverage de 1:500, tranzactionare cu depozit impartit la 15 unități, robot creat de AI pentru Pine Script, Copy trading și program de afiliere pe două niveluri.',
                 'WS Capital - we offer consulting and management for brokerage investors with 1:500 leverage, trading with deposit divided into 15 units, AI-created Pine Script robot, Copy Trading and a two-tier affiliate program.'
               )}
             </p>
