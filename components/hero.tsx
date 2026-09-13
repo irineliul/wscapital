@@ -7,7 +7,7 @@ import { BadgeCheck, Bot, Copy, LineChart } from 'lucide-react'
 
 const t = {
   en: {
-    badge: 'AFFILIATE PROGRAM + LEVERAGE 1:500 BROKERAGE',
+    badge: 'FREE AFFILIATE PROGRAM + LEVERAGE 1:500 BROKERAGE',
     title: 'Professional Investment Management with Martingale Strategy &',
     highlight: 'Up to $500 Earnings per Investor',
     desc: 'As a free affiliate partner, you can earn up to $500 per activated investor, depending on the country tier. What do you imagine investing just $150 for a 1000x profit opportunity in 10 weeks feels like, $153,600? Investors receive to TradingView Pro a free Pine Script robot created with AI, and access to Copy Trading. Deposit split into 15 units for 4 Martingale levels.',
@@ -15,7 +15,7 @@ const t = {
     ctaCommission: 'Check commissions by country',
     highlights: [
       { icon: LineChart, label: '1:500 Leverage' },
-      { icon: BadgeCheck, label: 'Free TradingView Pro' },
+      { icon: BadgeCheck, label: 'TradingView Pro' },
       { icon: Bot, label: 'Free Pine Script Robot' },
       { icon: Copy, label: 'Brokerage Copy Trading' },
     ],
@@ -27,7 +27,7 @@ const t = {
   },
 
   ro: {
-    badge: 'PROGRAM DE AFILIERE + BROKERAJ CU LEVERAGE 1:500',
+    badge: 'PROGRAM DE AFILIERE GRATUIT + BROKERAJ CU LEVERAGE 1:500',
     title: 'Administrare Profesională a Investiției cu Strategia Martingale &',
     highlight: 'Până la $500 câștig per Investitor',
     desc: 'Ca partener afiliat gartuit, poți câștiga până la $500 pentru fiecare investitor activat, în funcție de grupa țării. Cum crezi că este să investești doar $150 pentru o oportunitate de profit de 1000x în 10 săptămâni, $153,600? Investitorii primesc pentru TradingView Pro, un robot Pine Script creat cu AI și acces la Copy Trading. Depozitul este împărțit în 15 unități pentru 4 niveluri Martingale.',
@@ -35,7 +35,7 @@ const t = {
     ctaCommission: 'Verifică comisioanele pe țară',
     highlights: [
       { icon: LineChart, label: 'Leverage 1:500' },
-      { icon: BadgeCheck, label: 'TradingView Pro gratuit' },
+      { icon: BadgeCheck, label: 'TradingView Pro' },
       { icon: Bot, label: 'Robot Pine Script gratuit' },
       { icon: Copy, label: 'Copy Trading în brokeraj' },
     ],
