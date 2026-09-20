@@ -19,7 +19,7 @@ const t = {
         desc: 'You receive by email your personalized brokerage account opening link with 1:500 leverage, the free Pine Editor trading robot and Copy Trading access. TradingView PRO is activated after your deposit is validated as an investor.',
       },
       {
-        title: '2. Affiliate Partner Account',
+        title: '2. Free Affiliate Partner Account',
         desc: 'You receive by email a second registration link as a partner. After approval you receive your affiliate ID and access to your dashboard with commissions, clicks and registrations.',
       },
     ],
@@ -40,7 +40,6 @@ const t = {
     countryLabel: 'Country',
     depositLabelPrefix: 'Planned Deposit (min. ',
     depositLabelSuffix: ' for activation)',
-    agreeText: 'I understand that leveraged trading and the Martingale strategy carry a high risk of capital loss.',
     errInvalid: 'Please complete all required fields and verify planned deposit amount.',
     errSave: 'Failed to save registration. Please check your data and try again.',
     btnSubmit: 'Register Now',
@@ -63,7 +62,7 @@ const t = {
         desc: 'Primești pe email link-ul personalizat de deschidere cont în brokeraj cu leverage 1:500, robotul de tranzacționare gratuit pentru Pine Editor și acces la Copy Trading. TradingView PRO se activează după validarea depozitului ca investitor.',
       },
       {
-        title: '2. Cont de partener afiliat',
+        title: '2. Cont de partener afiliat gratuit',
         desc: 'Primești pe email al doilea link de înregistrare ca partener. După aprobare primești ID-ul tău de afiliat și accesul la dashboard cu comisioane, click-uri și înregistrări.',
       },
     ],
@@ -84,7 +83,6 @@ const t = {
     countryLabel: 'Țară',
     depositLabelPrefix: 'Depozit planificat (min. ',
     depositLabelSuffix: ' pentru activare)',
-    agreeText: 'Am înțeles că tranzacționarea cu leverage și strategia Martingal implică risc ridicat de pierdere a capitalului.',
     errInvalid: 'Completează datele obligatorii și verifică depozitul planificat.',
     errSave: 'Nu am putut salva înregistrarea. Verifică datele și încearcă din nou.',
     btnSubmit: 'Înregistrează-te acum',
@@ -264,16 +262,6 @@ export function RegisterForm() {
                   className="mt-1.5 w-full rounded-lg border border-input bg-background px-3 py-2.5 text-sm outline-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/40"
                 />
               </div>
-
-              <label className="flex items-start gap-2 text-sm text-muted-foreground">
-                <input
-                  type="checkbox"
-                  required
-                  className="mt-1 size-4 accent-primary"
-                  name="acord"
-                />
-                <span>{content.agreeText}</span>
-              </label>
 
               {error ? (
                 <p role="alert" className="text-sm text-destructive">
