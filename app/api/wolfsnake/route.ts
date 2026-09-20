@@ -1,4 +1,4 @@
-import { google } from '@ai-sdk/google'
+import { createGoogle } from '@ai-sdk/google'
 import { streamText } from 'ai'
 import { NextResponse } from 'next/server'
 
@@ -29,6 +29,15 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'A user message is required.' }, { status: 400 })
     }
 
+    const geminiApiKey = process.env.GOOGLE_GENERATIVE_AI_API_KEY
+    if (!geminiApiKey) {
+      return NextResponse.json(
+        { error: 'Google Gemini API is not configured.' },
+        { status: 503 },
+      )
+    }
+
+    const google = createGoogle({ apiKey: geminiApiKey })
     const result = streamText({
       model: google('gemini-2.5-flash'),
       system: systemPrompt,
