@@ -166,11 +166,11 @@ export function MartingaleStrategy() {
                 </div>
                 <div className="flex items-center justify-between">
                   <dt className="text-muted-foreground">{content.tpLabel}</dt>
-                  <dd className="font-mono font-semibold">{stopLossPips * 2} pips</dd>
+                  <dd className="font-mono font-semibold">{stopLossPips} pips</dd>
                 </div>
                 <div className="flex items-center justify-between">
                   <dt className="text-muted-foreground">{content.rrRatio}</dt>
-                  <dd className="font-mono font-semibold">1:2</dd>
+                  <dd className="font-mono font-semibold">1:1</dd>
                 </div>
                 <div className="flex items-center justify-between">
                   <dt className="text-muted-foreground">{content.totalRisk}</dt>
