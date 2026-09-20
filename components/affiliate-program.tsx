@@ -16,7 +16,7 @@ const t = {
       {
         icon: UserPlus,
         title: '1. Direct Affiliate',
-        text: 'You get your own unique tracking link. Earn up to $500 for every investor activated with deposit and trading turnover.',
+        text: 'Earn up to $500 for every investor activated with deposit and trading turnover.',
       },
       {
         icon: Network,
@@ -40,9 +40,7 @@ const t = {
     },
     lotsUnit: 'lots',
     bullets: [
-      'Payouts in USD, crypto, or wire transfer',
       'Real-time dashboard with clicks, registrations, and deposits',
-      'Ready-to-use promotional materials and ad creatives',
       'Dedicated account manager for active affiliates',
     ],
   },
@@ -54,7 +52,7 @@ const t = {
       {
         icon: UserPlus,
         title: '1. Afiliere directă',
-        text: 'Primești link-ul propriu de tracking. Pentru fiecare investitor activat cu depozit și rulaj de tranzacționare încasezi până la $500, în funcție de țară.',
+        text: 'Pentru fiecare investitor activat cu depozit și rulaj de tranzacționare încasezi până la $500, în funcție de țară.',
       },
       {
         icon: Network,
@@ -78,9 +76,7 @@ const t = {
     },
     lotsUnit: 'loturi',
     bullets: [
-      'Plăți în USD, crypto sau transfer bancar',
       'Dashboard cu click-uri, înregistrări și depozite în timp real',
-      'Materiale promoționale și creative gata de publicare',
       'Manager de cont dedicat pentru afiliații activi',
     ],
   },
