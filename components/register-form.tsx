@@ -40,7 +40,6 @@ const t = {
     countryLabel: 'Country',
     depositLabelPrefix: 'Planned Deposit (min. ',
     depositLabelSuffix: ' for activation)',
-    agreeText: 'I understand that leveraged trading and the Martingale strategy carry a high risk of capital loss.',
     errInvalid: 'Please complete all required fields and verify planned deposit amount.',
     errSave: 'Failed to save registration. Please check your data and try again.',
     btnSubmit: 'Register Now',
@@ -84,7 +83,6 @@ const t = {
     countryLabel: 'Țară',
     depositLabelPrefix: 'Depozit planificat (min. ',
     depositLabelSuffix: ' pentru activare)',
-    agreeText: 'Am înțeles că tranzacționarea cu leverage și strategia Martingal implică risc ridicat de pierdere a capitalului.',
     errInvalid: 'Completează datele obligatorii și verifică depozitul planificat.',
     errSave: 'Nu am putut salva înregistrarea. Verifică datele și încearcă din nou.',
     btnSubmit: 'Înregistrează-te acum',
@@ -264,16 +262,6 @@ export function RegisterForm() {
                   className="mt-1.5 w-full rounded-lg border border-input bg-background px-3 py-2.5 text-sm outline-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/40"
                 />
               </div>
-
-              <label className="flex items-start gap-2 text-sm text-muted-foreground">
-                <input
-                  type="checkbox"
-                  required
-                  className="mt-1 size-4 accent-primary"
-                  name="acord"
-                />
-                <span>{content.agreeText}</span>
-              </label>
 
               {error ? (
                 <p role="alert" className="text-sm text-destructive">
