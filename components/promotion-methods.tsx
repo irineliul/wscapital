@@ -64,7 +64,7 @@ const t = {
 
 export function PromotionMethods() {
   const [lang, setLang] = useState<'en' | 'ro'>('en')
-  const [qrTarget, setQrTarget] = useState('http://wscapital.ws')
+  const [qrTarget, setQrTarget] = useState('https://wscapital.app')
 
   useEffect(() => {
     const saved = window.localStorage.getItem('site-language')
