@@ -1,4 +1,5 @@
-import { gateway, streamText } from 'ai'
+import { createGoogle } from '@ai-sdk/google'
+import { streamText } from 'ai'
 import { NextResponse } from 'next/server'
 
 const systemPrompt = `You are WolfSnake, the official website assistant for WS Capital.
@@ -28,8 +29,17 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'A user message is required.' }, { status: 400 })
     }
 
+    const geminiApiKey = process.env.GOOGLE_GENERATIVE_AI_API_KEY
+    if (!geminiApiKey) {
+      return NextResponse.json(
+        { error: 'Google Gemini API is not configured.' },
+        { status: 503 },
+      )
+    }
+
+    const google = createGoogle({ apiKey: geminiApiKey })
     const result = streamText({
-      model: gateway('google/gemini-2.5-flash'),
+      model: google('gemini-2.5-flash'),
       system: systemPrompt,
       messages,
       maxOutputTokens: 500,
