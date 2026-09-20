@@ -12,7 +12,9 @@ import {
 import { ShieldAlert } from 'lucide-react'
 
 const usd = (n: number) =>
-  n.toLocaleString('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 2 })
+  n.toLocaleString('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 })
+
+const lotDisplay = (n: number) => `${n.toFixed(1)} lot`
 
 const t = {
   en: {
@@ -162,7 +164,7 @@ export function MartingaleStrategy() {
                 </div>
                 <div className="flex items-center justify-between">
                   <dt className="text-muted-foreground">{content.lotsPerUnit}</dt>
-                  <dd className="font-mono font-semibold">{lotsForMargin(unit).toFixed(2)} {content.lotSuffix}</dd>
+                  <dd className="font-mono font-semibold">{lotDisplay(lotsForMargin(unit))}</dd>
                 </div>
                 <div className="flex items-center justify-between">
                   <dt className="text-muted-foreground">{content.tpLabel}</dt>
@@ -183,15 +185,15 @@ export function MartingaleStrategy() {
                 <p className="mt-1">
                   {content.parityDesc1}
                   <span className="font-mono text-accent-foreground">
-                    {usd(MARGIN_PER_MIN_LOT)} = {MIN_LOT.toFixed(2)} {content.lotSuffix}
+                    {usd(MARGIN_PER_MIN_LOT)} = {lotDisplay(MIN_LOT)}
                   </span>
                   {content.parityDesc2}
                   <span className="font-mono text-accent-foreground">
-                    $10 = {lotsForMargin(10).toFixed(2)} {content.lotSuffix}
+                    $10 = {lotDisplay(lotsForMargin(10))}
                   </span>
                   {content.parityDesc3}
                   <span className="font-mono text-accent-foreground">
-                    $100 = {lotsForMargin(100).toFixed(2)} {content.lotSuffix}
+                    $100 = {lotDisplay(lotsForMargin(100))}
                   </span>
                   .
                 </p>
@@ -240,7 +242,7 @@ export function MartingaleStrategy() {
                       <td className="px-4 py-3 text-right font-mono">{l.multiplier}×</td>
                       <td className="px-4 py-3 text-right font-mono">{usd(l.margin)}</td>
                       <td className="px-4 py-3 text-right font-mono">
-                        {l.lots.toFixed(2)} {content.lotSuffix}
+                        {lotDisplay(l.lots)}
                       </td>
                       <td className="px-4 py-3 text-right font-mono">{usd(l.pipValue)}</td>
                       <td className="px-4 py-3 text-right font-mono text-destructive">
@@ -263,7 +265,7 @@ export function MartingaleStrategy() {
                       {usd(levels.reduce((s, l) => s + l.margin, 0))}
                     </td>
                     <td className="px-4 py-3 text-right font-mono">
-                      {levels.reduce((s, l) => s + l.lots, 0).toFixed(2)} {content.lotSuffix}
+                      {lotDisplay(levels.reduce((s, l) => s + l.lots, 0))}
                     </td>
                     <td className="px-4 py-3 text-right font-mono">—</td>
                     <td className="px-4 py-3 text-right font-mono text-destructive">
