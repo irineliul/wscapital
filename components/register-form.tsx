@@ -19,7 +19,7 @@ const t = {
         desc: 'You receive by email your personalized brokerage account opening link with 1:500 leverage, the free Pine Editor trading robot and Copy Trading access. TradingView PRO is activated after your deposit is validated as an investor.',
       },
       {
-        title: '2. Affiliate Partner Account',
+        title: '2. Free Affiliate Partner Account',
         desc: 'You receive by email a second registration link as a partner. After approval you receive your affiliate ID and access to your dashboard with commissions, clicks and registrations.',
       },
     ],
@@ -62,7 +62,7 @@ const t = {
         desc: 'Primești pe email link-ul personalizat de deschidere cont în brokeraj cu leverage 1:500, robotul de tranzacționare gratuit pentru Pine Editor și acces la Copy Trading. TradingView PRO se activează după validarea depozitului ca investitor.',
       },
       {
-        title: '2. Cont de partener afiliat',
+        title: '2. Cont de partener afiliat gratuit',
         desc: 'Primești pe email al doilea link de înregistrare ca partener. După aprobare primești ID-ul tău de afiliat și accesul la dashboard cu comisioane, click-uri și înregistrări.',
       },
     ],
