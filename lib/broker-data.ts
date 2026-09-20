@@ -11,7 +11,7 @@ export type Tier = {
 export const tiers: Record<string, Tier> = {
   A: {
     id: 'A',
-    name: 'Grupa A — Tier 1',
+    name: 'Group A — Tier 1',
     commission: 500,
     subCommission: 50,
     minDeposit: 150,
@@ -20,7 +20,7 @@ export const tiers: Record<string, Tier> = {
   },
   B: {
     id: 'B',
-    name: 'Grupa B — Tier 2',
+    name: 'Group B — Tier 2',
     commission: 375,
     subCommission: 37,
     minDeposit: 150,
@@ -29,7 +29,7 @@ export const tiers: Record<string, Tier> = {
   },
   C: {
     id: 'C',
-    name: 'Grupa C — Tier 3',
+    name: 'Group C — Tier 3',
     commission: 250,
     subCommission: 25,
     minDeposit: 150,
@@ -38,7 +38,7 @@ export const tiers: Record<string, Tier> = {
   },
   D: {
     id: 'D',
-    name: 'Grupa D — Tier 4',
+    name: 'Group D — Tier 4',
     commission: 150,
     subCommission: 15,
     minDeposit: 150,
@@ -233,41 +233,3 @@ export function buildDoublingPlan(start = 150, weeks = 10) {
     }
   })
 }
-
-export const promotionChannels = [
-  {
-    name: 'Facebook Ads',
-    audience: 'Traffic rece + retargeting',
-    budget: '$15–$50 / zi',
-    cpa: '$40–$90',
-    format: 'Video 15s + lead form',
-  },
-  {
-    name: 'Instagram Business',
-    audience: 'Reels & Stories',
-    budget: '$10–$40 / zi',
-    cpa: '$35–$80',
-    format: 'Reels verticale + link în bio',
-  },
-  {
-    name: 'YouTube',
-    audience: 'In-stream & Shorts',
-    budget: '$20–$60 / zi',
-    cpa: '$50–$110',
-    format: 'Review robot Pine Script',
-  },
-  {
-    name: 'TikTok Business',
-    audience: 'Spark Ads',
-    budget: '$20–$50 / zi',
-    cpa: '$25–$70',
-    format: 'Rezultate copy trading',
-  },
-  {
-    name: 'X (Twitter)',
-    audience: 'Promoted posts',
-    budget: '$10–$30 / zi',
-    cpa: '$45–$95',
-    format: 'Thread + semnale live',
-  },
-]
