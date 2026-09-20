@@ -54,17 +54,6 @@ export function SiteFooter() {
             ))}
           </nav>
         </div>
-
-        <div className="mt-10 rounded-xl border border-border bg-secondary/50 p-5">
-          <h2 className="text-sm font-semibold">{t('Avertisment de risc', 'Risk warning')}</h2>
-          <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
-            {t(
-              'Tranzacționarea produselor cu efect de levier (până la 1:500) implică un risc ridicat și poate duce la pierderea întregului capital investit. Strategia de Martingale crește expunerea progresiv și poate epuiza depozitul într-o singură serie pierdută. Exemplul de dublare a capitalului este o proiecție matematică, nu o garanție de randament. Comisioanele de afiliere (până la $500) depind de țară, depozitul validat și rulajul minim de tranzacționare. Nu oferim consultanță de investiții.',
-              'Trading leveraged products (up to 1:500) involves high risk and may result in the loss of all invested capital. The Martingale strategy progressively increases exposure and can deplete the deposit in a single losing series. The capital doubling example is a mathematical projection, not a return guarantee. Affiliate commissions (up to $500) depend on country, validated deposit and minimum trading volume. We do not offer investment advice.'
-            )}
-          </p>
-        </div>
-
         <p className="mt-6 text-xs text-muted-foreground">
           © {new Date().getFullYear()} WS Capital. {t('Toate drepturile rezervate.', 'All rights reserved.')}
         </p>
