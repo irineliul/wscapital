@@ -27,10 +27,10 @@ const t = {
   },
 
   ro: {
-    badge: 'PROGRAM FOREX GRATUIT + INSTRUMENTE DE TRADING',
-    title: 'Instrumente de Trading Forex & Program de Afiliere Gratuit',
-    highlight: 'Câștigă până la $500 per Investitor Activ',
-    desc: 'Accesează instrumente TradingView, semnale Pine Script bazate pe AI, copy trading și o strategie structurată de gestionare a capitalului. Alătură-te gratuit programului de afiliere WS Capital și câștigă comisioane de până la $500 per investitor activ, în funcție de categoria țării.',
+    badge: 'PROGRAM GRATUIT DE AFILIERE FOREX + INSTRUMENTE DE TRADING',
+    title: 'Instrumente de Trading Forex & Program Gratuit de Afiliere',
+    highlight: 'Câștigă până la 500 USD pentru fiecare investitor activ',
+    desc: 'Accesează instrumente TradingView, semnale Pine Script bazate pe AI, Copy Trading și o strategie structurată de gestionare a capitalului. Alătură-te gratuit programului de afiliere și câștigă comisioane de până la 500 USD pentru fiecare investitor activ, în funcție de categoria țării.',
     ctaRegister: 'Înregistrează-te acum',
     ctaCommission: 'Verifică comisioanele pe țară',
     highlights: [
