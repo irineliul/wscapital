@@ -10,11 +10,10 @@ const _playfair = Playfair_Display({ subsets: ['latin'] })
 const _jetbrainsMono = JetBrains_Mono({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title:
-    'WS Capital — Free Forex Affiliate Program | Up to $500 per Investor | Martingale Trading',
+  title: 'WS Capital | Forex Affiliate Program & Trading Tools',
 
   description:
-    'Join the WS Capital Free Forex Affiliate Program and earn up to $500 per active investor. Access Martingale Trading, 1:500 leverage, Copy Trading, TradingView Pro and a free Pine Script trading robot.',
+    'Join the WS Capital forex affiliate program and access TradingView tools, Pine Script signals, copy trading and commissions up to $500 per active investor.',
 
   keywords:
     'martingale forex strategy, forex affiliate program, $500 commission per investor, leverage 1:500, copy trading, TradingView Pro free, pine script robot, blackbull affiliate, supertrend signals',
@@ -24,11 +23,10 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title:
-      'WS Capital — Free Forex Affiliate Program | Up to $500 per Investor | Martingale Trading',
+    title: 'WS Capital | Forex Affiliate Program & Trading Tools',
 
     description:
-      'Join for free and earn up to $500 per active investor. Access Martingale Trading, 1:500 leverage, Copy Trading and a free Pine Script trading robot.',
+      'Explore forex trading tools, TradingView resources, Pine Script signals, copy trading and the WS Capital affiliate program with commissions up to $500 per active investor.',
 
     url: 'https://wscapital.app',
     siteName: 'WS Capital',
@@ -40,7 +38,7 @@ export const metadata: Metadata = {
         width: 1200,
         height: 630,
         alt:
-          'WS Capital — Free Forex Affiliate Program, Martingale Trading and 1:500 Leverage',
+          'WS Capital — Forex Affiliate Program and Trading Tools',
       },
     ],
   },
@@ -48,11 +46,10 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
 
-    title:
-      'WS Capital — Free Affiliate Program | Up to $500 per Investor | Martingale Trading',
+    title: 'WS Capital | Forex Affiliate Program & Trading Tools',
 
     description:
-      'Join the WS Capital Free Affiliate Partnership Program and earn up to $500 per active investor. Access Martingale Trading, 1:500 leverage, Copy Trading and a free Pine Script trading robot.',
+      'Explore forex trading tools, TradingView resources, Pine Script signals, copy trading and the WS Capital affiliate program with commissions up to $500 per active investor.',
 
     images: ['https://wscapital.app/images/wscapital-og.png'],
   },

@@ -7,11 +7,11 @@ import { BadgeCheck, Bot, Copy, LineChart } from 'lucide-react'
 
 const t = {
   en: {
-    badge: 'FREE AFFILIATE PROGRAM + LEVERAGE 1:500 BROKERAGE',
-    title: 'Professional Investment Management with Martingale Strategy &',
-    highlight: 'Up to $500 Earnings per Investor',
-    desc: 'As a free affiliate partner, you can earn up to $500 per activated investor, depending on the country tier. What do you imagine investing just $150 for a 1000x profit opportunity in 10 weeks feels like, $153,600? Investors receive to TradingView Pro a free Pine Script robot created by AI, and access to Copy Trading. Deposit split into 15 units for 4 Martingale levels.',
-    ctaRegister: 'Register now',
+    badge: 'FREE FOREX AFFILIATE PROGRAM + TRADING TOOLS',
+    title: 'Forex Trading Tools & Free Affiliate Program',
+    highlight: 'Earn Up to $500 per Active Investor',
+    desc: 'Access TradingView tools, AI-powered Pine Script signals, copy trading and a structured capital management strategy. Join affiliate program for free and earn commissions of up to $500 per active investor, depending on the country tier.',
+    ctaRegister: 'Register Free',
     ctaCommission: 'Check commissions by country',
     highlights: [
       { icon: LineChart, label: '1:500 Leverage' },
@@ -27,10 +27,10 @@ const t = {
   },
 
   ro: {
-    badge: 'PROGRAM DE AFILIERE GRATUIT + BROKERAJ CU LEVERAGE 1:500',
-    title: 'Administrare Profesională a Investiției cu Strategia Martingale &',
-    highlight: 'Până la $500 câștig per Investitor',
-    desc: 'Ca partener afiliat gartuit, poți câștiga până la $500 pentru fiecare investitor activat, în funcție de grupa țării. Cum crezi că este să investești doar $150 pentru o oportunitate de profit de 1000x în 10 săptămâni, $153,600? Investitorii primesc pentru TradingView Pro, un robot Pine Script creat de AI și acces la Copy Trading. Depozitul este împărțit în 15 unități pentru 4 niveluri Martingale.',
+    badge: 'PROGRAM GRATUIT DE AFILIERE FOREX + INSTRUMENTE DE TRADING',
+    title: 'Instrumente de Trading Forex & Program Gratuit de Afiliere',
+    highlight: 'Câștigă până la 500 USD pentru fiecare investitor activ',
+    desc: 'Accesează instrumente TradingView, semnale Pine Script bazate pe AI, Copy Trading și o strategie structurată de gestionare a capitalului. Alătură-te gratuit programului de afiliere și câștigă comisioane de până la 500 USD pentru fiecare investitor activ, în funcție de categoria țării.',
     ctaRegister: 'Înregistrează-te acum',
     ctaCommission: 'Verifică comisioanele pe țară',
     highlights: [
