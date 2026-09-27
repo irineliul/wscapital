@@ -10,7 +10,7 @@ const t = {
     badge: 'FREE FOREX AFFILIATE PROGRAM + TRADING TOOLS',
     title: 'Forex Trading Tools & Free Affiliate Program',
     highlight: 'Earn Up to $500 per Active Investor',
-    desc: 'Access TradingView tools, AI-powered Pine Script signals, copy trading and a structured capital management strategy. Join the WS Capital affiliate program for free and earn commissions of up to $500 per active investor, depending on the country tier.',
+    desc: 'Access TradingView tools, AI-powered Pine Script signals, copy trading and a structured capital management strategy. Join affiliate program for free and earn commissions of up to $500 per active investor, depending on the country tier.',
     ctaRegister: 'Register Free',
     ctaCommission: 'Check commissions by country',
     highlights: [
