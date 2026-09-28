@@ -17,10 +17,10 @@ const heroVideoSchema = {
   name: 'WS Capital Forex Trading Tools & Free Affiliate Program',
   description:
     'Discover WS Capital forex trading tools, TradingView resources, AI-powered Pine Script signals, copy trading and the free affiliate program with commissions of up to $500 per active investor.',
-  contentUrl: 'https://wscapital.app/video/wscapital.mp4',
   thumbnailUrl: 'https://wscapital.app/images/trading-terminal.png',
+  uploadDate: '2026-08-31T13:58:39Z',
   duration: 'PT10S',
-  embedUrl: 'https://wscapital.app/',
+  contentUrl: 'https://wscapital.app/video/wscapital.mp4',
   creator: {
     '@type': 'Organization',
     name: 'WS Capital',
