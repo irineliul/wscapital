@@ -11,3 +11,4 @@ User-agent: PerplexityBot
 Allow: /
 
 Sitemap: https://wscapital.app/sitemap.xml
+Sitemap: https://wscapital.app/video-sitemap.xml
