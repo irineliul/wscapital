@@ -142,7 +142,7 @@ export function Hero() {
       loop
       preload="metadata"
       poster="/images/trading-terminal.png"
-      aria-label="WS Capital trading video"
+      aria-label="WS Capital forex trading tools and affiliate program"
     >
       <source src="/video/wscapital.mp4" type="video/mp4" />
       Your browser does not support the video tag.
